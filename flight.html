@@ -1,0 +1,2535 @@
+
+
+<!DOCTYPE html>
+<html id="ctl00_IBEMasterID" lang="en-GB">
+<head id="ctl00_Head1"><title>
+	Search flights | Book a flight | Emirates
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!--[if lt IE 10]> _strIPText3
+    <script src="../js/globalnav/xhr-xdr-adapter.js" type="text/javascript"></script> 
+    <![endif]-->
+
+    
+            <script>
+                var hn = window.location.hostname.split('.').reverse();
+                _boxever_settings = {
+                    client_key: "ek2Zx82tZTOPkQhPaE41UTJEwbPdudQu",
+                    target: "https://api.boxever.com/v1.2",
+                    cookie_domain: '.' + hn[1] + '.' + hn[0],
+                    javascriptLibraryVersion: "1.4.1",
+                    pointOfSale:"emirates.com/ng",
+                    web_flow_target: "https://d35vb5cccm4xzp.cloudfront.net",
+                    web_flow_config: {async:true, defer:false}
+                }
+            </script>
+            <script type="text/javascript"  src="https://c.ekstatic.net/boxever-1.4.1.min.js"></script>
+        
+        <script charset='UTF-8' >
+            try {
+                window['adrum-start-time'] = new Date().getTime();
+                (function (config) {
+                    config.appKey = 'EC-AAB-BEB';
+                    config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';
+                    config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';
+                    config.beaconUrlHttp = 'http://fra-col.eum-appdynamics.com';
+                    config.beaconUrlHttps = 'https://fra-col.eum-appdynamics.com';
+                    config.xd = { enable: false };
+                })(window['adrum-config'] || (window['adrum-config'] = {
+                    userEventInfo: {
+                        "PageView": function (context) {
+                            return {
+                                userData: {
+                                    TempMachineName: document.getElementById("ctl00_tempMachineName").value
+                                }
+                            }
+                        }
+                    }
+                }));
+            }
+            catch (e) { }
+        </script>
+        
+                <script defer src="https://cdn.appdynamics.com/adrum/adrum-4.4.0.117.js" type="text/javascript" charset="UTF-8">
+                </script>
+        
+
+        <script type="text/javascript" lang="javascript" >
+            var __departAirport = "Departure airport";
+            var __arrivalAirport = "Arrival airport";
+            var __selectAirport = "Select airport";
+            var ArrCugo = null;
+            var __SessionCugo = '';
+            var __CugoCode = '';
+            var __CUGODepLoc = '';
+            var __CUGOArrLoc = '';
+            var __CUGODepart1 = '';
+            var __isFlexi = 'True';
+            var __isModify = 'True';
+            var __isCugoModify = 'True';
+            var __isFirstLoad = 'False';
+            var __PublicationUrl = '/ng/english';
+            var __FromLoc = 'MUC';
+            var __ToLoc = 'FIH';
+            var __FromBRCLoc = '';
+            var __ToBRCLoc = '';
+            var __From1Loc = 'MUC';
+            var __To1Loc = 'FIH';
+            var __From2Loc = 'FIH';
+            var __To2Loc = '';
+            var __From3Loc = '';
+            var __To3Loc = '';
+            var __From4Loc = '';
+            var __To4Loc = '';
+            var __From5Loc = '';
+            var __To5Loc = '';
+            var __From6Loc = '';
+            var __To6Loc = '';
+            var __From7Loc = '';
+            var __To7Loc = '';
+            var __From8Loc = '';
+            var __To8Loc = '';
+            var __From9Loc = '';
+            var __To9Loc = '';
+            var __From10Loc = '';
+            var __To10Loc = '';
+            var __FromOJLoc = '';
+            var __ToOJLoc = '';
+            var __OALoc = '';
+            var __IALoc = '';
+            var __FromFltWgtLoc = '';
+            var __ToFltWgtLoc = '';
+            var __FromClLoc = '';
+            var __ToClLoc = '';
+            //var __interSector = '';
+            var sSystemPath = '/CAB/System';
+            var sDefaultIBEXmlUrl = sSystemPath + "/aspx/AirportsXML.aspx?pub=/english";
+            var sIbePath = '/CAB';
+            /*GBE - Start*/
+            var adultAgeGBERange = '';
+            var adultAgeRange = '';
+            var adult_data_access_title = 'Select the number of adults, age 12+';
+            var GBE_data_access_title = 'Select the number of adults, age 16+';
+            var linkTextAudio = 'link';
+            var collapsedTextAudio = 'collapsed';
+            var expandedTextAudio = 'expanded';
+            // ******MYb payment page variable
+            var MYBTI_POS_Country = '';
+            var MYBAPP = ''
+            //***********
+            /*GBE - End*/
+            var SHOW_DETAILS = 'Choose seats:Show details';
+            var HIDE_DETAILS = 'Choose seats:Hide details';
+            var REMOVE_INSURANCE = 'Options:Remove insurance';
+            var ADD_INSURANCE = 'Options:Add to trip';
+            //#region Voucher switch
+            var TRAVELVOUCHERFOP_CNJ_DSAS_1374 = 'True';
+            var FF_IBE_23_VOUCHER_PHASE1B = 'True';
+            var FF_IBE_23_VOUCHER_PHASE1FIXES = 'True';
+            //#endregion
+            var blnFF_IBE_26_COBRAND = 'False';
+             
+
+            var PREMIUMECONOMY_CABIN_CLASS_CODE = '7';
+            var FF_IBE_7316_PREM_ECON_AWARE_CABIN_DROPDOWNS_FLAG = 'True';
+            var FF_IBE_10642_PREM_ECON_AWARE_CABIN_DROPDOWNS_ECONPREMECON_FLAG = 'False';
+            var FF_IBE_10515_RESTRICT_CABIN_TO_FIRST_OND = 'True';
+            var FF_IBE_70_PSD2_AIG_TI_PAYMENT = 'True';
+            var SUCCESSTEXT = 'SUCCESS';
+            var FF_IBE_UPLIFT_BNPL_ENABLED = 'True';
+            var UPLIFTCONFIGURATION = "{'Uplift_CdnURL':'https://cdn.uplift-platform.com/a/up.js','Uplift_Key':'1lZzuLbiJu6FiT2IJcymh6YABAFA53Qq9bZRSYAp','Country_Config':{'US':{'UP_Code':'UP-55675619-1','Currency':'USD','Language':'en'},'CA':{'UP_Code':'UP-55675619-2','Currency':'CAD','Language':'en,fr'}}}";
+        </script>
+    
+<link id="ctl00_CashMilesUpdatesMin" rel="stylesheet" type="text/css" href="../CSS/CashMilesUpdates.min.css?v=14122023" integrity="sha256-EhOO/KvK/L6evz8hnB+iSy0fkCBSNrJu8km0zo9fCK0= sha384-tWl4JVKgvJ8kCm1W1MGPRDhP51FBRn0/j+5YDqIecET440ygnddVXcaBQov8EK7W sha512-PfPC1nBQM15FsIqg1TOPlURpzYs0PkEl+Y8tl7ApCS5zSCViJsh1CxIFafYB42Xji3JJk7C3eTxAUUQnLlTDZg==" crossorigin="anonymous" /><link id="ctl00_IBELink3" rel="stylesheet" type="text/css" href="../css/main.min.css?v=14122023" />        
+        <link rel="stylesheet" type="text/css" href="../css/CurrencyMessaging.min.css?v=14122023" integrity="sha256-1uNQybKG3Ab9x6XkSVsw0c6AFCySsVcf9/Y89Qm8bCU= sha384-wnSq2SglPNkGKRO9lokFh/QlJw17rx95yL/vGfB8lyXlTFp0C/j0eX2z/VEdUPRv sha512-ruEKDrX1HqSToYR431glftluZW8AKWQVAY17Pkt341zTS2pwA0h1duYNtzzNRQ1aDlzx+jnyBjhbaH+nHnWGVQ==" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="../css/PaymentMethodUpdates.min.css?v=14122023" integrity="sha256-N0ZNliizszzzCmkvYTqsgf1OL0K3DlOxE6X/ROTt1Qk= sha384-JIfRhEXw1q2LVUuV5Y91MeLsCDCZTUMzYxkKD0hjkKtaZ6NiEKpLk8qP1n/PgIHe sha512-o9pbB9XfLM38N4L57c/Zf6p8k1v/7wSFY+Qp7uHXjcJG8k1fRXtGHq7uxehDd+8NJSUZa8pOhqNLg1eHpORMZA==" crossorigin="anonymous" />
+    
+<link id="ctl00_template_style_ColNav2" rel="stylesheet" type="text/css" />
+<link id="ctl00_IBELink4" rel="stylesheet" type="text/css" href="../css/icons.min.css?v=14122023" integrity="sha256-YH0TZYvwYFH+8eURrKVKoOKaHWSXdVQShZRCZC4Tjtk= sha384-N7H8ZKIHBFKKV3UAvcnFasHiFCicsLEijHB33ZFplYH3BHKH2eoUUsqCOD1VGUOd sha512-rIty+BDf1mpQJgdcCfYkt2Qu84bAt1Q3p9UXu6hXSd6LEp9y8s2Zrmyuat4iknfzkA/8foydOG9w/FCcvS1zMw==" crossorigin="anonymous" /><link id="ctl00_IBELink6" rel="stylesheet" type="text/css" href="../css/fare_families_accessibility.min.css?v=14122023" /><link id="ctl00_IBELink7" rel="stylesheet" type="text/css" href="../css/AutoSuggest.min.css?v=14122023" integrity="sha256-v7SMgw9oBdE6GvS4KWUJxXHc7QQDUC2msP9O2XxYfZE= sha384-8tSheyNVwIxbWYuTfrukW0buzPJvBX1xX+QLiemxnqCwpvyioqGHS4unTQpUvOC9 sha512-hrX22yTosR8uLjxBivwBKCJrwa30piCw+GnPTYIQ8gdNnYElyrvYQZ4s++Sl+0FHbLLGbz6pE4T7ezrdluDc0g==" crossorigin="anonymous" />
+    <style type="text/css">
+        /*WACG - Emil: Add new style to fix the Interstitial page - search page*/
+        body.fareFamiliesLoaderBodyBG #logo {
+            height: auto;
+            left: auto;
+            position: relative;
+            top: auto;
+            width: auto;
+            z-index: auto;
+        }
+        /*WACG - Emil End: Add new style to fix the Interstitial page - search page*/
+    </style>
+    <!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="../css/ie8fix.css" /><![endif]-->
+    <!--[if lte IE 7]> <link rel="stylesheet" type="text/css" href="../css/ie7fix.css" /><![endif]-->
+    <!--[if lte IE 6]> <link rel="stylesheet" type="text/css" href="../css/ie6fix.css" /><![endif]-->
+    <!--[if lte IE 8]> <p class='browser ie8' /> <![endif]-->
+   
+    
+
+<link rel="stylesheet" type="text/css" href="../CSS/base/colorbox.css?v=14122023" integrity="sha256-IhNLNJ70q88NjWBHdQuE53RgJmsiPB8thzVfZKcHZUg= sha384-qaofyPSX1dMYqlvJiTRfHvxYx6UIyb5E7Q8/noS5vkcu71pUzmG/auPcQ05O8u7q sha512-YHMFkQIqfUKpLkuMEE+mefcXViSlnxTmayHCmqIO2+bo3v141is6QwbOwNC9rk1LcKCDOprLJXshmosmdQUq6A==" crossorigin="anonymous" />
+
+<link rel="stylesheet" type="text/css" href="../CSS/UT08_grid_calendar_7x7.min.css?v=14122023" integrity="sha256-39i1krpczO9A4gAwlEjPiDKmXX72Aixk8ysBKeHbpcE= sha384-zq50E+/ocEp3iQt+mmDFbGKR7DQWBlBIDXRHlnKtx/yfyUgqhH8usH+r6AOtgwk2 sha512-/DpSUzRRaXUO6hN5fuDor59oNIxKmo1J1Bj4gNcahdY+CrQ28WfJWt3lgaJu2atLD48RudgOrjNIpJmLeNxf+w==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="../css/UT08_override.min.css?v=14122023" integrity="sha256-938k8a5cTY/cqU+Su7NKEkMZgsJaPwLD8kWhbR89r/w= sha384-AKZXAAfmKAdc9EVHT1crlbgzpKZo8KDkGJblhUYdY8H0TOh5zabVoqqGOsA3eE4V sha512-2n9PY/4sJk3tcrTuDPixwIJXvn+5VojJshCeKrePZc7mkw7HcNhN3HIFddHVJTVNwPD9XsaQr1IzzWw4B04N+Q==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="../css/RDB_override.min.css?v=14122023" integrity="sha256-idRQz8kgjDL3qnfeUV8xJBzKHfcp29uS0NJRoUsK0EA= sha384-PkZ9mp4yHjIFl/k/2LOiaykufAiMi1Xy4+cpWT9vM1e713Y1EVYgXVw6XykHMj1V sha512-krNhri3utnvn4sOJ6i3Ae6XUCO6zroB/ssSZK/iSDqE0cAlYcu8yhMNuwH/Xmz1neb7s5thUjPLs1uPdIa/taw==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="../css/LDP_override.min.css?v=14122023" integrity="sha256-RsX+62YzKKFUkyA4TH43W3q6LeTpXhERC+gUV45l5Ek= sha384-ftRrVKGJSbXiGV40fWjf+SeYJtcu6PVl4FHJcp4NO/WOdrxP4aXvEgUNIaNnszV5 sha512-+3kMM+PYynAjhy8hkQRV6HSfXR9AgqoSs1YVODYhWtZlSwaPJwCCZb/enROL+CWjwEawCxheYa8bohf9AAm2Sw==" crossorigin="anonymous" />
+<link href="../CSS/fare_families.min.css?v=14122023" rel="stylesheet" />
+
+<link href="../CSS/jquery-ui-1.10.3.custom.min.css?v=14122023" integrity="sha256-mIIhaifodKSY0XUl3+aIdCjv/TCAiACQW3w/eQOxbk4= sha384-6kN26t9km2XSFAn/ypNXBEUEEEn5qIL43BRyx7J8gKZ4UIaeg4d9ju9jdC7kntkS sha512-KA8yhqs3GK4GOVGe9hcr32m+t/Q6yQQWRcqdJzDXGDjWcTlljsre3twGBUBzHh29YiXI2tOlYoDfsWDP3jOLRw==" crossorigin="anonymous" rel="stylesheet" />
+<link id="ctl00_section_css_CugoLanding" rel="stylesheet" type="text/css" href="../css/CugoLanding.min.css?v=14122023" integrity="sha256-jZn/johnyMMUHLr+jU8cevZe4ZetCsLSWTKmsZVpoUk= sha384-koXxpaVhpxnpSn5nl471WkLbD/+YFa3+xpAsBkcr5AykIOBCBHSqAHwInM6rTHqK sha512-r4rnrkld8jJmnoYcRymzlwnca6CRKYJxqgefX02bF6Z3oQvGqHM9yZ9cJuZl3Dz7AshjoAxGKKX7IbTjU8edpA==" crossorigin="anonymous" />
+<link id="ctl00_section_css_jquerycustom" rel="stylesheet" type="text/css" href="../css/ui-lightness/jquery-ui-1.8.6.custom.min.css?v=14122023" integrity="sha256-iCnyeEm0wLA+Zx6Kjp5s6WzNzEVcuwgSTJXohhcYuPM= sha384-JR9b+pCoppvTvuvuucvOs3amD3lz8TbORkqPh+K+VDVOjDp1mwckiX/c+NF4R8ul sha512-s7JGCfo70HMPCl6N48ubcqNGuySpjqoZVBwQHMFi+oMK82VBs1FyBIiRjG9a8VcFWbSBs3vE3sE16hD28gr7yw==" crossorigin="anonymous" />
+<link id="ctl00_section_css_FLXOverrideMin" rel="stylesheet" type="text/css" href="../css/FLX_override.min.css?v=14122023" integrity="sha256-IeDjftAhzmfZgH34kCcdtcmTMZi04h3FGA4kSUsp8QI= sha384-Nru2CUc/Z6lvVLKOPKSEzBgEANtpK2838f+xq4N0s3vx8eH5tGMFkxEtSySaXqrH sha512-f/oe3qa1qDf+okZht98yx6P94ig83yLItii2aggaxUUxwP3RymhZo4Kppx4MdzLJplXjcHrMLegV0hwlEPCNVA==" crossorigin="anonymous" />
+<link id="ctl00_section_css_headerCSOHPFMin" rel="stylesheet" type="text/css" href="../css/header_CSO_HPF.min.css?v=14122023" integrity="sha256-I9XZrAXHp/ckvaS1zvWHpaGdGmBJvS+abIHAPuLXTIg= sha384-3LJyTGbqLNSaYGaBgkK78UysbS4n6NiJXWzfygjznk3vg1bDTeOg/kzDouNrOMGb sha512-lXTd07QgmTdw9Y5kAlShEFs/k+qpZhcfmC9sJmi6qrlv9Bq+0ZPjr/b1ap6ifYnbEimXUfhtx+4Rxp0XeXtUJQ==" crossorigin="anonymous" />
+<script type="text/javaScript" src="../js/Utility.min.js?v=14122023" integrity="sha256-vRFPFiEmuvyhlcefIT0zz+I/EhzpfPqJTXNs5SDuPxk= sha384-RQ/cC9sNGKsVz0NQRZjc0TGJWuf6vxXAYYXal9DTxhGUbgY/nrMaHRVVg57vMGE5 sha512-JPqXe7OQpwFibniB1/XcNNnOHH8N74dgM5Ddfwbp4DTQy/vk/kKuNVSvG0O2E+mVYgjfffquvJJuJcSvoL6PpA==" crossorigin="anonymous"></script>
+<link id="ctl00_section_css_PlanAndBookMin" rel="stylesheet" type="text/css" href="../css/plan_and_book.min.css?v=14122023" integrity="sha256-crzZjau2gvshh0UreiRJKhLB2mzf0wL07oiLQHC52HM= sha384-w37R8YYGi6xsPHina4rsLhqL9nmF2MawwjuLKUVHT959+kaUm1BdWUjH6HR5Ult8 sha512-5SOFK5l2yXHYTaD2BVWd6+b51K9JdsG6Auv/xUwyJp3blp/OYg9I/XEBt1/rLOFXQtsSKPTEorEAUDIuGicX5Q==" crossorigin="anonymous" />
+<link id="ctl00_section_css_Print3ColMin" media="print" rel="stylesheet" type="text/css" href="../css/print_friendly_3COL.min.css?v=14122023" integrity="sha256-zDeg8v1mTUOOU/0ScanlPA/5PX9mlqX6+NY+7OMzsZc= sha384-HA1A7vvVJXRCf9V87nBa2/g0lMBUC3/rbVjI8RvsQF8FnwMw7y+WczrURUAeVxez sha512-g7voMO4x8qPd6gyF2zFKuwmLrJ6d9ghwscKNMA9jrrlW4nbT7c9U1S/uglfU1rtIj+z5WERDskywzAE14/69Yw==" crossorigin="anonymous" />
+<link id="ctl00_section_css_SkyIbe" rel="stylesheet" type="text/css" href="../css/skywards_ibe_override.min.css?v=14122023" integrity="sha256-Ila9CkwVQsQtf8F8ipm1g5o//7zt8227zu5f/+m6Z5Q= sha384-7ZfkN9nJg16+S4t/lbPNKOCeH5xuPzleIYu3kI+joGOCPOceUrcRy7ovANyVVReN sha512-yUmInFZ2pVujs3jefOC4uWwaqZnkpHxtUPJRj6JwfJF0JawNoVGR9AlTTOEWs9/jWVKYxXLM3FQzofDQC0/KGg==" crossorigin="anonymous" />
+
+<script type="text/javascript" src="../js/2MonthCalendar.min.js?v=14122023" integrity="sha256-N9bYhM4nrEVWDQ5lIaMEdgwRWW7RtPMUUt232mpOMlk= sha384-bAvZEMUtNthrhnKPf8v2nIzK+RlkAoPm45kdNn5X5cxyzYVpcwV11ggWHlzOo2Am sha512-jsVJjYDFk/LVeffoiqk6PT33Uad63w2HlOao1xRhQZLYvuX8mcPV9EMYIK8zfiz+LEU7MvcwpvACRoc76Q6gIw==" crossorigin="anonymous"></script>                
+
+
+<script type="text/javascript" src="../CommonControls/Calendar.aspx?v=14122023"></script>
+<link id="ctl00_section_css_IBELink12" rel="stylesheet" type="text/css" href="../css/fare_families_rtl.css?v=14122023" integrity="sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU= sha384-OLBgp1GsljhM2TJ+sbHjaiH9txEUvgdDTAzHv2P24donTt6/529l+9Ua0vFImLlb sha512-z4PhNX7vuL3xVChQ1m2AB9Yg5AULVxXcg/SpIdNs6c5H0NE8XYXysP+DGNKHfuwvY7kxvUdBeoGlODJ6+SfaPg==" crossorigin="anonymous" />
+
+
+<link id="ctl00_section_css_IBELink7" rel="stylesheet" type="text/css" href="../css/choose-flight.min.css?v=14122023" integrity="sha256-24SAwkqn4kzMxwrljsjBc/YxfwRrNCqflYwiTohaY+Y= sha384-JePbGgUevkbRVn+oDSr7474DDhFzpKVOehc1FUMq5z5ZRgjykDFyaX/y4ZrumoLe sha512-EZXFVwn/1x27X18g2u/WLqwAYugPhVYjhB6PxaZQVRUv9jIpT3mF44ZSk2ZJQbTO7gg+2L8zyCTLIwN/+45vyA==" crossorigin="anonymous" />                        
+<link id="ctl00_tablesMin" rel="stylesheet" type="text/css" href="../css/tables.min.css?v=14122023" integrity="sha256-Jl3BCPZUi/cI/69Ej6ycl+YuQZiBFooTpfSN9nPhsdU= sha384-1JjbF1E+G8e0vd0NU/RCvVbmGxb639CQ6FWxjUJxfOo7wv8yRHGjD9oo0r08gVL1 sha512-xqEKn9OvMUMFZAq5Q045g2z+rPD39Sk/F2+EDA+EF2baIWmKIidNbzj3Z3r3hzcJUJXM9WrSPL2UPyXKsc/GxQ==" crossorigin="anonymous" /><link id="ctl00_lnkCustomMin" rel="stylesheet" type="text/css" href="/ng/english/include/css/custom.css" /><link id="ctl00_IBELink9" rel="stylesheet" type="text/css" href="../css/custom_functional_page.min.css?v=14122023" integrity="sha256-MpAUU5ahrtIzd+X0NyBnBWH8pSdu1KiZRC65uMXC6yM= sha384-t+Uc2ZuUBV6Mopx+32Xbd5824ii7dXhgisc2DoUVTnU3Dc9k/qBdp0n6y1GAceEc sha512-GEr5mnmOsx4E6bTAvMTvRODj9VE2Z0Lwq4SNu4Lg+pCvhQaOM46emWpdIWMMbUaOnTvulSXEfP7p6ZTLD6HacA==" crossorigin="anonymous" />
+         <link rel="Stylesheet" type="text/css" href="../css/chosen.min.css?v=14122023" integrity="sha256-M2k/zVb3jrIpIJBQAx5J191sBivXH/00vp5GBL91f80= sha384-/jUmy4+YvZHG9dw+5zH1VYdHMchQtQay5fkQvgDJ9t86762pL1v7j91WxgPceHCf sha512-4kWIbuyk1s5HoXvrv1S0CkD/aKkOw58GgCfCOAsLWkQ7LKiFDQKvnrJPqFYwuN2HYBGt+NfRf9w8i8+RGzGBTA==" crossorigin="anonymous" />
+         <link id="ctl00_IBELinkChosenMin" rel="stylesheet" type="text/css" /><link id="ctl00_skywards_ibe_override" rel="stylesheet" type="text/css" href="../CSS/skywards_ibe_override.min.css?v=14122023" integrity="sha256-Ila9CkwVQsQtf8F8ipm1g5o//7zt8227zu5f/+m6Z5Q= sha384-7ZfkN9nJg16+S4t/lbPNKOCeH5xuPzleIYu3kI+joGOCPOceUrcRy7ovANyVVReN sha512-yUmInFZ2pVujs3jefOC4uWwaqZnkpHxtUPJRj6JwfJF0JawNoVGR9AlTTOEWs9/jWVKYxXLM3FQzofDQC0/KGg==" crossorigin="anonymous" /><link id="ctl00_IBELink11" rel="stylesheet" type="text/css" href="../css/jquery.jscrollpane.min.css?v=14122023" integrity="sha256-nXpXIfgbmKXRVsfbi5+UvXwIiBdZkcqJb2VmiPlkx8E= sha384-v18DsSKi9c+2gjrANTZHTYWpUBsRx+71PXZcR/R5AR2SfIcbhcsKFTn+P8qjLQyW sha512-+y2HxeTrtFNAFGIMdhjL8tJQpBqgbh5JELIfPXlyMD3YARDAqRFnqHCHB3aW6VzARiP/Y7uDyu0FO8c3JfMafQ==" crossorigin="anonymous" /><link id="ctl00_IBELinkCoretopNavCoreCss" rel="stylesheet" type="text/css" href="../CSS/TopNavigation/core.css?v=14122023" /><link id="ctl00_IBELinkTopNavIBENavCssMin" rel="stylesheet" type="text/css" href="../CSS/TopNavigation/ibe-navigation.min.css?v=14122023" /><link id="ctl00_IBELinkTopNavIcons" rel="stylesheet" type="text/css" href="../CSS/TopNavigation/icons.min.css?v=14122023" integrity="sha256-nZGj2Y8eG7KYmoK5bYGVGYr8T8rgDeR5xgVG2A4oRYo= sha384-PWbtArDZYFeAi84/lB3KaJiNqskZ0klyqCYqpfEkrdIgMzTfouUpwwbTCVwSGrUf sha512-o4UeDfAg3XGikz9wmN3A5c4GlWTaL6XedvdWyXycbxoczvsIx3MY07dPbsFa/D1Fyt0NnQ7F5+6hs7Og+BGGLw==" crossorigin="anonymous" /><link id="ctl00_IBELink1" rel="stylesheet" type="text/css" href="../CSS/search-availability.min.css?v=14122023" integrity="sha256-lhUaZYbmv5B4Ly9dZhcvwDmgCuppkM6EHXBGL9Sa+Zo= sha384-LOoUKlgIUoTLR1RX8zw0mI+4LitY9O7nrw5WmqJM72VD0/xKmSKfjfjLsI+3JT2c sha512-/aAqkGp9Nu+DuaEBoLDtFtGHCKJm8RnTgDyYJmHhXE6HXM52rpFaE5CSk8SrkYkc9H66C5dVxQ8id56U8DeU9g==" crossorigin="anonymous" />
+    
+    <script lang="javascript" type="text/javascript" src="../js/jquery-1.6.4.min.js?v=14122023" integrity="sha256-g0pq8amBEYMGLzLCL+ZgavGJEJU5cFiaMFi4HAVjVpc= sha384-ngdzAWx9LgTd9NjSMPUPdbG8IM/Esw9+8oQcPeBIAExxOBpCVbdsmvRjOLUTVAC2 sha512-JtHXGOO/UnVSp8z11DYKoGoTvV+tOr67zIGEYwITRPKBa5yybNqfcL6ymdFoLVeu7kJM1W8ICCYg8aXchU5QNA==" crossorigin="anonymous"></script>
+    
+        <script type="text/javascript" src="../js/OriginDestincationAttributesFetcher.min.js?v=14122023" integrity="sha256-3PLa37ofNeYDS2ggVUAv89+ZU1Qj0B1k6EWaHRtGTnk= sha384-nw1uw4ZPPo66pJsZezRh75cu+7FBybATgRpayIBCFLid8V1HyHtveTAancuh6YL2 sha512-dQzEi+KAv5ViRv+zciRsYbRLs2Oeu5OdLILsaRJxUvHh7yFCBMYQoJAkSUbLI2tDJ1l71/ztpxFi9wY+26Dbrg==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/Teenager.min.js?v=14122023" integrity="sha256-i6YzUgVPghDokX/NqwD6VeIR2hT8oblvL4jsIfI/bhY= sha384-Y4LeEIj5DdxyFBxUG7MdhiobonjZSb+LD2Jco+tMSP++q1v3nmHXhMrl0f77p0Za sha512-gR0g301TNdp2YMoOMx0jiEr8pB0tqUvEioLcYEQ5V7mSF+pH/9alPdRsW7XwHiDFHMf42Z3Z7jOJkPFRsJvERQ==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/OFW.min.js?v=14122023" integrity="sha256-CzWJD7SPLwYORYb40D1ZnfGpRosVYDopX1P4zGDCKmg= sha384-6wpVGMhHq5xhgob68iVRTJCIcPpNmxDWzgCr4hp+H7sU39WA+cIBYh/1vmidN3zm sha512-i4vMJ5bPvHpkRQWEYy5ue1qkhSRU8SQ6YZO4eMhGCd7vB8LyIJ35GXx541rYLBZanD8EuVNcf9au1rNfTq/SsQ==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/bootstrap-tagsinput.min.js?v=14122023" integrity="sha256-CwwCY+JsZ8X09pkVtdclmSh9m4vFVF6usC+g5ErhDk4= sha384-6LLg83d1RvuAyAVXzs6JEAPFlzQfy0REUy4rCkxZ1w40tMRuf4dZNGswT/htUbPV sha512-/jp3ACjOHY42Y9IGwlIGVZeLqLOKsGa1yWKxoKa0xrguJauQPQF0t4T9kkabO3818Fv4CPycSm8mZTq728nJGg==" crossorigin="anonymous"></script>   
+        <script type="text/javascript" src="../js/globalnav/modernizr.min.js?v=14122023" integrity="sha256-hEOfOlyKj7mq52C4er7lui6qyjZ7EzsAK8k3hsMA+VQ= sha384-6LPKrSQmzHHyY5qsiC5eD1gXQ7RTbpJ85qYbHsbJWyr2Su3Pee1rdl4Y+w9ggGD6 sha512-By3+I32XFzhA4pF2IOSCoZ4Flf9QnTn113nX1x2i4l/3G/MYtuvgaaXsZ1fuXIS7QZnY3x1pNWD6/FpbvckBkA==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/main.min.js?v=14122023" integrity="sha256-t1INolP5cciAtrnDxm+Buy7eebiETrU61bXH4CT8khU= sha384-mO5W0WuGS7nhH4Xj40y3Hw31mV8oCl2hlBaAKSQt7Kk4AZfO9+PwbaGcym+u7c/Y sha512-VZ/fWGv27pSqZokO+THriiiqLtLV7Dn4OdqG9KvJC6PgbwcQi1oJNVpRo6mzPyFSzZ8twrgJ7GvcO3ay0NT9Qw==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/log.min.js?v=14122023" integrity="sha256-CWVVHhfsD09btviI6kg7zoq+jikwYGtyvpgYaDIEz84= sha384-OHU4Uf4m96RgkcOcP7ma1BZ449yTG/aeTSjLPcty9F2bt4QOTomvI22wEsIKDDwg sha512-8MesjPTj+E0aTE4JVYWPZVmrCdeAdECce2NyacCh8HouavnjNnxWU/SIYS06mCmhc9jRBSDsbhCg9URo3hotxg==" crossorigin="anonymous"></script>      
+        <script type="text/javascript" src="../js/search.min.js?v=14122023" integrity="sha256-pDJrLjvvezECDRYC5S5H1oiA2z5a1W5JCNmrg2oFEto= sha384-Q7YVVCoHb5nx1u1WQ2fSSUfbGqRDc75tFmqEjILNwzLc29cbhY/uLqc1xoniQom0 sha512-7q8Zf/CPsKtly34oQipLGAO03+MzlhmtvVCAE8eR3bvNljkZz42kem6Ggnr0Rk8TnBAunQbkGSl5OvU6GPKrCQ==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/IBEAutoSuggest.min.js?v=14122023" integrity="sha256-Is+K3pgIO1J4SGhF+9sQZ6PZh4qiszz98Zn1mGFMXK8= sha384-mQ7XbcVMIDCSzXHhfki5CfPsep6GGY9oQ+ZGjo+PKk0FOvTT97SCZGA7u8g1yrAo sha512-NmhjsZ98JfcKX8orDhw1oWWsq9N3YjEM6t601ZDz0lAezsJ6UjHppi3y2a4BXcHun/jBLAlGPxuQV12mIv3foA==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/jquery.countryPayInfo.min.js?v=14122023" integrity="sha256-Vhh74/vHNUWblH4VuHbiNM91TMb8HLOxra5mliu+9pg= sha384-5d8eXdHIxP880Uct9nRbP+xq+mMQVO3yIBKWxzBxo2cwEs8KqrbsK/ls4Q+f3CBs sha512-XusS/TJ2kySA56Xo65EQWSGjA+NfLtb3IC4F3xEJIrsuL6sj19LaUZSPrx1iMUL4jf8i8ygW/Ui6s+lV0ayW/A==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/jquery.chosen.min.js?v=14122023" integrity="sha256-f7SmZMBqj/7CCoXnD/0gbmZ6d43q5mVdB8JJzrGocAc= sha384-bNqMDCb+dJOH7foF68iC4Ca0R6UazBNGanxPWS9pn20mSKxX1C3Qc8+4ySY6pOnm sha512-yh1aU1F1LfcVGCINO+f4auNguG6WmAZcoe+zNEGSUDqwsS6e1cdl4XD8+euLtJQIqwqQoHev7kn6373n/X5JVA==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/jQuery_Easing_v1.3.min.js?v=14122023" integrity="sha256-/Tz95uwqIVr5JRabKaj9Q0zHk/4A7eediEhANds/ADM= sha384-x1quF/gOVxy+kR1+qKR1BHqfwcdIEE98y9YsbI81gX85+D+tdnwSg4vaw6RxXCAR sha512-y0Kn6llDUhtZ993j3G7t/8FPSMgrsD75gfXx6kQXqa5kagKdHSjOsxU/BZXt4zKy/T0MGK0aW7Tp+cFABjEKPQ==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/plugin.mainMenu.min.js?v=14122023" integrity="sha256-MnEKJMUw4lsyGWVGbvC1sfR9iWaORqaEpId6b5EG4+o= sha384-+bhjyrOsk2+6kc2apQmcomhzD/CNrOhT4z2b1Pt4DnhfvgfXbB21YZwRgrTAuZFg sha512-Pp7JcFRePV3m3YhwO2TltuVreFtRHHFXYyvXZa6E99bQ0XNQAY3EPakaNHfaRcbayeAOMx4v4eciHGktkyjc6Q==" crossorigin="anonymous"></script>
+        <script type="text/javaScript" src="../js/ieDetection.min.js?v=14122023" integrity="sha256-0uY4ChyQ8qJpWuCDwNDKS5E8Hd2xSWwSQQnEHNQU55k= sha384-e8dKWJh8GuE21/5QWJYNZ0b7y2xegmVDZdurft06yrRgUAJbXEh0UXrdjmF4fnbM sha512-SF3FG3UaXuFyHxYXOPO41hTxrLLBZY/fUIcJVqvZUHzcs61k8TX3axH+9Gx/4/5wnEl4HokKnT4Chdm8i6SF9g==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/navbar.min.js?v=14122023" integrity="sha256-Xl6DcIVmQ5rBIhMgX6oFM3A991CXwdrIXrPePTI00Yg= sha384-rPPzTv09Bw8Agcy9z/8pN6VGYlmsQQDnwc1FT9j0AFCwfu6VBqhWMrJMvcfPdMMN sha512-GJNf5a1ljpJT1fxXpyFLNV+kS9+pCwCtWwf9ltzxQhxo3SGaL1R3BsBK+L+0Z5jNfvCPhCTDmJTYm+BDZPmPhg==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/toggle.min.js?v=14122023" integrity="sha256-Ed5MADZQeW3ZD0GKt4tcuiuySQmBHvbBfvyPnnTpqPE= sha384-ncs2+fQc5WyJvTWKsgfWy6W1GQJjvDGEtholdsQd0ec+wLh8MfN4seWtJzSgj8Y1 sha512-DQYoGuqNly5A2Hg8X+LwzkVkF8HCiUjAaoWZxQbw7ScPc+DAH3eQKr99iVszoh2AsXYRMDABanwvUfQJ2BuW2w==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/jquery.loadImages.1.0.1.min.js?v=14122023" integrity="sha256-oziqVUcrPEca7sMuWzx0+4eDcuq7/7ma/bTEKQsykxs= sha384-mC5u+Rf9fswpr3JjnQxwB6cSqIyWXlsDjh9fy8FScDHfU37FK4XG/3kzeUqgfa2k sha512-WMjlxLlQqZUyh2Ce/ccQbdjaZIF6EdrBkJo8ONdjRqTwPFt9YEUInWuBV40/SjtBe+BrVSv8bH0Mosj2nCjSCA==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/jquery.jscrollpane.min.js?v=14122023" integrity="sha256-gtXD21ZTR3ogFEIJTuYvLx2ccyVpHT91hNfuKs3zFnQ= sha384-h53WY7Fj57VvT4NNrkuQ2yB4OG1hvagIcucVbaNK0pzosDkqhoR2SLtil/EK7UgQ sha512-X/ppsFSKE3DvZwXcSL9IQ41cADHVtFbkNGGgM4p/NXsHCe8EGwh8hJsg9f8+RIgA2RvgPIc+ugyjuLAuVKFndg==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/jquery-loading-1.6.4.min.js?v=14122023" integrity="sha256-5X5Le31ZKT9JVQSpniOeUF9L8ui5+F5Y/7BU1QJpxfk= sha384-P5IBvFMPPpHJD0Vc3AXFQmc1Iix0OhZEF+/RBeIa1mm2Rs/xn+aHPdlHT4GAxfav sha512-tfhA27pxlcw0FT5A3HeX3QYl2v8h3/SecNfFNTEquiSyEZ0vcBu87kg0AfuZt6pvwvTjkB5Qh6g2WOYwOQFzig==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/plugin.homeSlideshow.min.js?v=14122023" integrity="sha256-IGESOIPUOziUoIr+PBSleb4dEOEegP9MPf5deOYzgqo= sha384-rzCB0IMJtoRRroLJTQ4cWHtWtyLLi0JUUE8n3l+fSxElmEUpm+93FVw06xz451xa sha512-TZi8jTRTfvQPTf4B0iK5btbDO98jlLGm6ExybjvZluJ1w46fFoI8ueGM2cw+FlTPAUSAouMS5wmLc9j/F3bVWg==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/plugin.promo.min.js?v=14122023" integrity="sha256-bxV6p3k27CYscJPhZzbFB3zYKpG9hEUn7laBC9d1LSI= sha384-v8TiGBBVfYwCPKUInqh4ylF5Yqh1PavaIfCFmsyrf9EBmML9CoeXx+GmCLdfS6ol sha512-dTAMdrQECfH7xbOgSRPzNcNbKVhPur9XXdM+IAzbT4EpkMWSxGyN5QFiLtDX0U8kQJJXM5K/BpoCMtNqiU8//w==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/jquery.bgiframe.min.js?v=14122023" integrity="sha256-OIh80WRDAn1C3f3uSKhPNtsQjW1UWEqfh4ZQtPVzOvI= sha384-tEEDaNKurIkj81qQi0Ruj0ogarMv/Aad3N8aaneba4jV4JKZ+9iF+lfq4VplxUJu sha512-fW69pTPn5gzJ10dODpZvm+5MLTXJEiYq/CQtHdPCmhqgxEKoxH/KK6Z44qNyIUlw+AhnCCjl3yQWsbhVjvNcBQ==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/gaTagIBE.min.js?v=14122023" integrity="sha256-7y6SuQUYcVrRJognql/U6+iafHBO2Lw0LmRrwO5RXjM= sha384-E+DJCPSmFXocToQ9zK7AcFRzJBGY+yTi2y1JwxetjFM0J7zjDOIgWHVjy1DbxHsA sha512-I0ATKUGSXnZInBX98XWXrbo9O123JGUT9FZxwTQCxWI0/udgQ8z3R5C7oW6pWYDgTnirkM/2CLZ8LccoEBOAnw==" crossorigin="anonymous"></script>    
+        <script type="text/javascript" src="../js/formatMoney.min.js?v=14122023" integrity="sha256-Hx2hlc5/7Ng4zyQG6GTlOyfH97L8B8hcuwHtIdDdKqs= sha384-eRL+MEkkQCbNY+ORbSwPM7PE2NPvhqanfVKhjFirFMRABb6YVhfJJ9gtcT7gR5el sha512-f+L2TorLGAL0GaW5dmr8KrxGYF8Mbx7KRnCOcnsFzD+ybphZ111G8QhKErA8yJw7PkJdIFu8oit8n7jAEYqDaQ==" crossorigin="anonymous"></script>   
+        <script type="text/javascript" src="../js/IBE_cashMilesChanges-paymentDetails.min.js?v=14122023" integrity="sha256-NsjitJoVGzkrsXt8O+lNcyss6G78uO32h3SFAGCY/dg= sha384-DrJ8ws12i4ltbsCVKtVus29rwLdjeyQZ0dTN1MzlYUkTUgRW+CzSkDjL+uBaqcH0 sha512-k9OqEqNLuuNqSovRSD3jIwTa/QthNjrBkaVmthgXKs9C1ABoNDHyV6YO3DAyeDxtiRzYu48/LyPJtsID4T/k7g==" crossorigin="anonymous"></script>
+    
+        <script type="text/javascript" src="../js/TopNavigation/global-navigation-v2-min.js?v=14122023" integrity="sha256-15yNNZchSVVkJX3lB5ANHFTVBaqe1+a/vmpWeMqcuwg= sha384-5pRVp/yF2NhKZZ1d0n5sNAepZmUwt1T5uDMqrGTUn/ENST3QX3FIps4aI602aj2j sha512-AWmfsCFANpoGz3bui6Vp4YEXAgRiOHjdmkVle9kKgQtmojpgtfuyKE+uPsHbSL/DG3X9QZqiS0w8JOasIxYphQ==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/TopNavigation/nicescroll-min.js?v=14122023" integrity="sha256-smz4iGWcHzmhER1JefZR7VfQ3QZczzt2nSZNu6T62p4= sha384-Z1IftrBn8RUwrz93FxwzAL1a3J0HM/r9nMpTisbNxzOGRXxdpliEYbtMUBVQQdi0 sha512-FL/jkQ3EivIg11p/jr0fXNl+H0TWYy0xhtw1csSfSvoUnaXGWjmvfq8UKyRy4I9hm+fM9xVuUWT20MPzpzDubg==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/TopNavigation/global-navigation-interactions-min.js?v=14122023" integrity="sha256-Rihek7wRaj42QzpguZEIQmDzMQnIlLMobluI7nXuD7c= sha384-s8YewbZQ1cj1JjTK67p0O6s6OTDAcEmjlA5V6Uthug6S024CGpBYRjCN8K3adCc+ sha512-poud6eUImd3UqZWog0mqxbqiqU2RJaFuBZp0si3D9D8o6ErZ8qyFllOSKy4be5/ug9lnSk4/KdHkeyarVeuwug==" crossorigin="anonymous"></script>
+    
+    
+    <script type="text/javascript" >
+        var sPageName = '';
+        var sChannelName = '';
+        function loader() {
+            if (navigator.userAgent.toLowerCase().indexOf('msie') != -1 && (window.location.toString().indexOf("CUGOLandingPage.aspx") != -1 || window.location.toString().indexOf("SearchAvailability.aspx") != -1)) RePopulate();
+            MM_preloadImages('../images/processing_request/preload_top.gif', '../images/processing_request/preload_background.gif', '../images/processing_request/preload_bottom.gif', '../images/processing_request/preload_anim.gif', '../images/processing_request/logo_emirates.gif');
+        }
+
+        function UnLoader(e) {
+            if (!e) {
+                var e = window.event;
+            }
+            if (MM_findObj("hdnLoadMasterOLV") != null && MM_findObj("hdnLoadMasterOLV").value == "true") {
+                return;
+            }
+            if (e.clientX < 0 && e.clientY < 0) {
+                window.open('../SessionKiller.aspx', null, 'height=11,width=11');
+            }
+        }
+        //Save Pax info on browser close - Customer retargeting
+        function pageUnload() {
+            var strSplit = document.URL.split("/");
+            if (strSplit[strSplit.length - 1] == 'PassengerDetails.aspx?https=y' || strSplit[strSplit.length - 1] == 'PaymentDetails.aspx?https=y' || strSplit[strSplit.length - 1] == 'PaymentDetails.aspx') {
+                GetAsynCall('SavePaxInfo', sIbePath);
+            }
+        }
+        var timerID;
+
+        // Required for Firefox animation
+        function initialize_timer() {
+            timerID = setTimeout("submit_form()", 1);
+        }
+
+        function submit_form() {
+
+            if (timerID)
+                clearTimeout(timerID);
+
+            if (document.forms.length > 0) {
+                timerID = setTimeout("initialize_image();", 50);
+
+                document.forms[0].submit();
+            }
+        }
+
+        // Required for Internet Explorer animation
+        function initialize_image() {
+            if (timerID)
+                clearTimeout(timerID);
+
+            var image = document.getElementById("searchAnimation");
+
+            if (image) {
+                image.src = image.src;
+            }
+        }
+    </script>    
+
+    
+<script type='text/javascript' src='../CommonControls/CalenderJavaScript.aspx?random=-8584966082729990076'>
+<script type="text/javascript" src="../js/2MonthCalendar.min.js?v=14122023" integrity="sha256-N9bYhM4nrEVWDQ5lIaMEdgwRWW7RtPMUUt232mpOMlk= sha384-bAvZEMUtNthrhnKPf8v2nIzK+RlkAoPm45kdNn5X5cxyzYVpcwV11ggWHlzOo2Am sha512-jsVJjYDFk/LVeffoiqk6PT33Uad63w2HlOao1xRhQZLYvuX8mcPV9EMYIK8zfiz+LEU7MvcwpvACRoc76Q6gIw==" crossorigin="anonymous"></script>
+    
+<script type="text/javascript" src="../CommonControls/Calendar.aspx?culture=en-GB"></script>
+
+    <script type="text/javascript" >
+        // Apply focus properly when accessing internal links with keyboard in WebKit browsers.
+        $("a[href^='#']").not("a[href='#']").click(function () {
+            $("#" + $(this).attr("href").slice(1) + "").focus();
+        });
+    </script>
+<link rel="stylesheet" type="text/css" href="../css/processing_request.min.css?v=14122023" /><meta name="description" content="Emirates | Make a Booking~/ IBE / Plan and Book / Make a Booking" /></head>
+<body class="page-template leaderboard-template extended-body" ng-app="emirates" id="ng-app" module="IBE" onload="loader();" onunload="UnLoader(event);" onbeforeunload="pageUnload();" moduleName="IBE">
+    <div class="IBE-Loader" style="display: none" role="alert" aria-labelledby="hUpdatingOnly" aria-atomic="true" aria-hidden="true">
+        <div class="IBE-LoaderBackground"></div>
+        <div class="IBE-LoaderContent modalLoader No-Text">
+            <span id="hUpdatingOnly" class="main-text cufon-medium">
+                One moment please…
+            </span>
+        </div>
+        <div class="IBE-LoaderContent modalLoader with-text" style="display: none">
+            <div id="hUpdating" class="main-text cufon-medium"></div>
+            <span id="ltWait1" class="secondary-text">
+                One moment please…
+            </span>
+        </div>
+    </div>
+    <input name="ctl00$WATP_Tracker" type="hidden" id="WATP_Tracker" class="WATP_Tracker" disabled="disabled" />
+    <input name="ctl00$GTM_BaseDataLayerJson" type="hidden" id="GTM_BaseDataLayerJson" class="GTM_BaseDataLayerJson" disabled="disabled" value="{&quot;memberLoginType&quot;:&quot;Public&quot;,&quot;posSiteCurrencyCode&quot;:&quot;NGN&quot;,&quot;pageCategory&quot;:&quot;IBE&quot;,&quot;platformType&quot;:&quot;Desktop&quot;,&quot;documentTitle&quot;:&quot;Emirates | Make a Booking&quot;,&quot;pageName&quot;:&quot;/ IBE / Plan and Book / Make a Booking&quot;,&quot;domainName&quot;:&quot;fly2.emirates.com&quot;,&quot;visitorSessionID&quot;:&quot;97074a01-7ebe-4e5f-8825-905694e31046&quot;,&quot;serverTimeStamp&quot;:&quot;11012024224330&quot;,&quot;trueClientIP&quot;:&quot;102.89.45.224&quot;,&quot;languageCode&quot;:&quot;EN&quot;,&quot;countryCode&quot;:&quot;NG&quot;,&quot;countryRegion&quot;:&quot;NG|AFRICA&quot;,&quot;pageSubSection&quot;:&quot;/ IBE / Plan and Book&quot;,&quot;serverName&quot;:&quot;IBE-DOZ-EC2AMAZ-A3M6JAK&quot;,&quot;loginType&quot;:&quot;Public&quot;,&quot;visitorLoginState&quot;:&quot;Logged Out&quot;,&quot;memberTier&quot;:&quot;Without Profile&quot;,&quot;personAndGuestID&quot;:&quot;Without Profile&quot;,&quot;skywardsProduct&quot;:&quot;n/a&quot;,&quot;skywardsProductPackageCode&quot;:&quot;n/a&quot;,&quot;searchRouteErrorsIBE&quot;:&quot;MUC-FIH&quot;,&quot;siteErrorCode&quot;:&quot;System:IBE:IBE_FQE_ERR002&quot;,&quot;originSearchIBE&quot;:&quot;MUC&quot;,&quot;destinationSearchIBE&quot;:&quot;FIH&quot;,&quot;originAirport&quot;:&quot;MUC&quot;,&quot;destinationAirport&quot;:&quot;FIH&quot;,&quot;flightDateOutIBE&quot;:&quot;2024-03-04&quot;,&quot;classOutboundSearchIBE&quot;:&quot;Economy&quot;,&quot;nOfAdultsSearchIBE&quot;:&quot;1&quot;,&quot;nOfChildSearchIBE&quot;:&quot;0&quot;,&quot;nOfInfantsSearchIBE&quot;:&quot;0&quot;,&quot;classSearchIBE&quot;:&quot;Y&quot;,&quot;routeSearchIBE&quot;:&quot;Y:MUC-FIH&quot;,&quot;searchLeadTimeIBE&quot;:&quot;53 days&quot;,&quot;searchTripDurationIBE&quot;:&quot;0&quot;,&quot;flightSearchTypeIBE&quot;:&quot;Calendar&quot;,&quot;flightSearchType&quot;:&quot;Calendar&quot;,&quot;typeOfSearchIBE&quot;:&quot;One Way&quot;,&quot;flightSearchMonthIBE&quot;:&quot;S:Jan|D:Mar&quot;,&quot;searchLocationIBE&quot;:&quot;Flight&quot;,&quot;classOutboundCodeIBE&quot;:&quot;Y&quot;,&quot;originCountry&quot;:&quot;DE&quot;,&quot;destinationCountry&quot;:&quot;CD&quot;,&quot;flightSearchPaymentTypeIBE&quot;:&quot;Revenue&quot;,&quot;flightSearchDecisionTypeIBE&quot;:&quot;Calendar&quot;,&quot;flightSearchTripTypeIBE&quot;:&quot;One Way&quot;,&quot;flightTripType&quot;:&quot;One Way&quot;,&quot;flightAirlineTypeIBE&quot;:&quot;EK&quot;,&quot;originCountryflightRoute&quot;:&quot;DE&quot;,&quot;flightDepartureDate&quot;:&quot;2024-03-04&quot;,&quot;cabinClassflightRoute&quot;:&quot;Y&quot;,&quot;numberOfAdultsFlight&quot;:&quot;1&quot;,&quot;numberOfChildrenFlight&quot;:&quot;0&quot;,&quot;numberOfInfantsFlight&quot;:&quot;0&quot;,&quot;numberOfTeenagersFlight&quot;:&quot;0&quot;,&quot;productTypeIBE&quot;:&quot;Flight&quot;,&quot;destinationAirportFlightRoute&quot;:&quot;FIH&quot;,&quot;originAirportflightRoute&quot;:&quot;MUC&quot;,&quot;posCurrencyCode&quot;:&quot;EUR&quot;}" />
+    <input name="ctl00$hdnErrorList" type="hidden" id="hdnErrorList" disabled="disabled" />
+    <input name="ctl00$hdnShowError" type="hidden" id="hdnShowError" disabled="disabled" />
+    <input name="ctl00$hdnServDateTime" type="hidden" id="hdnServDateTime" disabled="disabled" client-datetime="" value="2024-01-11 22:43:32.476" />
+    <input name="ctl00$EEC_DLJson" type="hidden" id="EEC_DLJson" class="EEC_DLJson" disabled="disabled" />
+    <script type="text/javascript" lang="javascript" >
+        try {
+
+            if ($('#hdnServDateTime').length > 0) {
+                var dtime = new Date();
+                $('#hdnServDateTime').attr('client-DateTime', dtime);
+            }
+        }
+        catch (e) {
+
+        }
+
+    </script>
+    <input type="hidden" id="SessionTimeout" value="1200"
+        enable="true"
+        warningtime="20" />
+    <form method="post" action="./SearchAvailability.aspx" id="aspnetForm" autocomplete="off">
+<div class="aspNetHidden">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="//OXXQHF3gTqKp+RpY19JSe9w0Pyn8HE1QeGHLc9wa6fg5UJ0bDHCiLekpM/+D3vPV3o6hnoUBXBTWkUfbSiu2XqZRKX0pvc5F1z3Kk+2Px0ZbdWUX+Hhcxjt23FMuSqoNLDws+DWLHDM3e3eEL54UF0CfDUV0ntaJrnaoRJoxxBCn5Vwl5LN4GL10v9Qbtlr1abAaJmp6ttF0h9AGqXcdAgcZO+kOGKlT8PwP0bFGGW3lLZwRWuBsti7B7Fl0Bb4sato+j//odOkUvqL5qFNwWiJ7tYX0JpAknI/Dnm6Z1LobQ0z9n+DD1FvBhHJES47WvQ1nYm3KjBxoNPSnk172TMNaAwlg2AzVrBM3Xf8YDuui0IdVZBr3gHXnPcw+ih4F9K4KbG9FCGPK41FT0L0sGmTPkINRwApKwP4uUm8TJnhniZOWEfjh9rr+Fea3gzjLQcneM+jqShw8wFZU7knGsmQrCXJn00/G8B4GoSxviAe+k9tSQyLJLmWJBTcN1Pt0hRblHjPGeFhZiZIhk7Blgwpo4BQZENQ5HS3U4bzi5pa3Yo" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/CAB/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZDnuFcvNUhLO0Fa3d4GOA7KlbshMv2y6z-07MGjBHWHq5THemQ2&amp;t=637814797746327080" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var adultAgeGBERange = '(Age 16+)'; var adultAgeRange='(Age 12+)'; var adult_data_access_title='Select the number of adults, age 12+'; var GBE_data_access_title ='Select the number of adults, age 16+'; var formName='IBE_Login'; var fromLoginPage = 'F';  var newFormName='Flight Search:Search'; var searchButtonUniqueID ='ctl00$c$IBE_PB_FF';var cUGODomainID='ctl00_c_hdnCUGODomain';var cUGOUniqueKeyID='ctl00_c_hdnCUGOUniqueKey';var isListCUGOID='ctl00_c_hdnIsListCUGO';var isValidCUGOID='ctl00_c_hdnIsValidCUGO';var clearCUGOID='ctl00_c_hdnClearCUGO';var strPnlPOEMCUGO ='ctl00_c_CtPrOffer_pnlPOEMCUGO1';var IsPasswordReqCugo='ctl00_c_hdnCUGOPasswordReq';var IBE0001='Please review and complete the fields highlighted below, and submit the page again.';var IBEA0001='This is a mandatory field, please review and try again.';var IBE0002='Please make sure you enter different departure and arrival airports.';var IBEA0002='The information you entered is incorrect, please review and try again.';var IBE0003='Please check the promotional code and try again.';var IBE0005='Please make sure each departure date is after the previous flight in your booking. You may book flights up to 328 days from today.';var IBE0006='Please make sure the departure date for your first outbound stopover is after the departure date for your first flight.';var IBE0007='Please make sure the departure date for your second outbound stopover is after the departure date for your first outbound stopover.';var IBE0008='Please make sure the departure date for your first inbound stopover is after the departure date of your first return flight.';var IBE0009='Please make sure the departure date for your second inbound stopover is after the departure date of your first inbound stopover.';var IBE0010='Please check your Emirates Skywards number and try again.';var IBE0030='Please make sure the return date is after the departure date. You may book travel for up to 328 days from today.';var IBE0116='Please use the advanced search option to book more than seven seats in Business Class or four seats in First Class.';var IBE0018='Please enter a valid email address, e.g. name@domain.com.';var IBE0017='Please enter an email address.';var IBEFB001='Sorry, Skywards Flex search is only available when searching for flights in a single class. Please select one class for outbound and inbound flights.';var PER_CUGO003='Please enter the promotional code provided for this offer.';var PER_CUGO001='The promotional code you entered is incorrect. Please check and try again.';var CUGO_DOMAIN_REFNO='Please enter your unique code.';var CUGO_DOMAIN_EMAIL='Sorry, this email address cannot be used with this promotional code.';var CUGO_VALID_REFNO='The unique code you entered is incorrect. Please check and try again.';var IBE_INVALID_TRAVELLERS_COUNT='Please use the advanced search option to book more than seven seats in Business Class or four seats in First Class.';var UNEXPECTED_ERROR='Sorry, we have a technical problem at the moment. Please try again or get in touch with us for help.';var CUGO_MissingLandingPage='Please check all of the information provided for this promotional code and try again.';var CUGO_DEVICE_ERROR='Sorry, this promotional code can only be availed on a mobile device.';var IBE0012='Please select a stopover airport and enter the departure date.';var IBE0013='Please make sure the departure date for this stopover is after the departure date for your first flight.';var IBE0014='Please make sure the departure date for this stopover is after the departure date of your first return flight.';var IBE0031='Please make sure each departure date is after the previous flight in your booking.';var IBE0049='Please check your login details and try again.';var IBE0056='Sorry, our seat availability has changed. Please <a href="https://www.emirates.com/english/help/offices/?pub=autodetect" target="_blank" class="bodyLink">get in touch with us<span class="visually-hidden">(the link opens in a new window)</span></a> if you need help to complete a booking.';var IBE0062='Please select the departure or arrival airport of the previous leg.';var IBE0064='Sorry, only one stopover is permitted per round trip on a reward booking.';var IBE0099='Please select your preferred connecting airline.';var IBE0059='You may not select a date more than 328 days from today.';var IBE0114='Sorry, when a booking is made with a connection on another airline, we are only able to offer Economy Class.';var LNP0033='Please check the password and try again.';var LNP0039='Please check the date and try again.';var IBE_ADULT_REQ='Please select at least one adult for children.';var IBE_PSNGR_REQ='Please select at least one passenger.';var IBE_PLAN_MULTISEARCHINCOMP='Please complete all fields before adding another leg to your journey.';var IBEA0014='You can only spend your Miles on Economy Class tickets for infant passengers.';var IBE_SMERedeem_NonEconomy_With_Infant='<p>Sorry, we have a technical problem at the moment. Please <a href="https://www.emirates.com/english/help/offices/?pub=autodetect" target="_blank" class="bodyLink">get in touch with us<span class="visually-hidden">(the link opens in a new window)</span></a> for help. We apologise for the inconvenience.</p> -- IBE_SMERedeem_NonEconomy_With_Infant';var isGlobalRewardOffer=false;var SOOWI='You can use this page to make a stopover on the way to your destination. Enter your travel details and select your search preferences below. Click &lt;strong&gt;Find Flights&lt;/strong&gt; when you are done.';var strNPf='Select carrier';var currdt='11-Jan-24';var IAC=new Array();IAC[0]='JP:Adria Airways';IAC[1]='A3:Aegean Airlines';IAC[2]='EI:Aer Lingus';IAC[3]='SU:Aeroflot';IAC[4]='AR:Aerolíneas Argentinas';IAC[5]='AM:Aeromexico';IAC[6]='AH:Air Algerie';IAC[7]='KC:Air Astana';IAC[8]='BT:Air Baltic';IAC[9]='KF:Air Belgium';IAC[10]='AB:Air Berlin';IAC[11]='BP:Air Botswana';IAC[12]='2J:Air Burkina';IAC[13]='AC:Air Canada';IAC[14]='CA:Air China';IAC[15]='UX:Air Europa';IAC[16]='AF:Air France';IAC[17]='AI:Air India';IAC[18]='I5:AIR MALI';IAC[19]='KM:Air Malta';IAC[20]='MK:Air Mauritius';IAC[21]='SW:Air Namibia';IAC[22]='NZ:Air New Zealand';IAC[23]='VK:AIR NIGERIA DEV ';IAC[24]='PX:Air Niugini';IAC[25]='JU:Air Serbia';IAC[26]='HM:Air Seychelles';IAC[27]='TN:Air Tahiti Nui';IAC[28]='SB:Aircalin';IAC[29]='AS:Alaska Airlines';IAC[30]='NH:All Nippon Airways';IAC[31]='W3:Arik Air';IAC[32]='OZ:Asiana';IAC[33]='KK:AtlasGlobal';IAC[34]='OS:Austrian Airlines';IAC[35]='AV:Avianca';IAC[36]='J2:Azerbaijan Airlines';IAC[37]='PG:Bangkok Air';IAC[38]='BG:Biman Bangladesh Airlines';IAC[39]='BA:British Airways';IAC[40]='BD:BRITISH MIDLAND';IAC[41]='FB:Bulgaria Air';IAC[42]='VR:Cabo Verde Airlines';IAC[43]='CX:Cathay Pacific';IAC[44]='CI:China Airlines';IAC[45]='MU:China Eastern';IAC[46]='CZ:China Southern Airlines';IAC[47]='MN:Comair';IAC[48]='CO:Continental Airlines';IAC[49]='CM:COPA Airlines';IAC[50]='SS:Corsair International';IAC[51]='OU:Croatia Airlines';IAC[52]='CY:Cyprus Airways';IAC[53]='OK:Czech Airlines';IAC[54]='D3:DAALLO AIRLINES';IAC[55]='DL:Delta Air Lines';IAC[56]='KA:Dragonair';IAC[57]='T3:Eastern Airways';IAC[58]='MS:Egypt Air';IAC[59]='B8:ERITREAN AIRLINES';IAC[60]='ET:Ethiopian Airlines';IAC[61]='EY:Etihad Airways';IAC[62]='BR:EVA Air';IAC[63]='FJ:Fiji Airways';IAC[64]='AY:Finnair';IAC[65]='BE:flybe';IAC[66]='FZ:flydubai';IAC[67]='GA:Garuda';IAC[68]='A9:Georgian Airways';IAC[69]='G3:GOL Linhas Aéreas S.A';IAC[70]='GF:Gulf Air';IAC[71]='HR:Hahn Air';IAC[72]='HA:Hawaiian Airlines';IAC[73]='IB:Iberia';IAC[74]='FI:Icelandair';IAC[75]='D6:INTRA AIR SERVICES';IAC[76]='IR:Iran Air';IAC[77]='AZ:ITA Airways';IAC[78]='JO:JALWAYS';IAC[79]='JL:Japan Airlines';IAC[80]='NU:JAPAN TRANSOCEAN';IAC[81]='9W:Jet Airways';IAC[82]='B6:JetBlue';IAC[83]='JQ:Jetstar Airways';IAC[84]='3K:Jetstar Asia Airways';IAC[85]='GK:Jetstar Japan';IAC[86]='BL:Jetstar Pacific';IAC[87]='KQ:Kenya Airways';IAC[88]='KL:KLM';IAC[89]='KE:Korean Air';IAC[90]='KU:Kuwait Airways';IAC[91]='TM:LAM Mocambique';IAC[92]='LA:LATAM Airlines';IAC[93]='4M:LATAM Argentina';IAC[94]='XL:LATAM Ecuador';IAC[95]='PZ:LATAM Paraguay';IAC[96]='LP:LATAM Perú';IAC[97]='LO:LOT Polish Airlines';IAC[98]='LT:LTU INTL';IAC[99]='LH:Lufthansa';IAC[100]='LG:Luxair';IAC[101]='MH:Malaysia Airlines';IAC[102]='MP:Martinair';IAC[103]='L6:Mauritania Airlines';IAC[104]='U7:MERIDIANA AFR.';IAC[105]='IG:Meridiana fly';IAC[106]='ME:Middle East Airlines';IAC[107]='YM:Montenegro Airlines';IAC[108]='8M:Myanmar Airways International';IAC[109]='RA:Nepal Airlines';IAC[110]='HG:Niki';IAC[111]='NW:Northwest Airlines';IAC[112]='DN:Norwegian Air Argentina';IAC[113]='OA:Olympic Air';IAC[114]='WY:Oman Air';IAC[115]='PK:Pakistan International Airlines';IAC[116]='PR:Philippine Airlines';IAC[117]='PW:Precision Air';IAC[118]='P0:Proflight Zambia';IAC[119]='QF:Qantas Airways';IAC[120]='QR:Qatar Airways';IAC[121]='AT:Royal Air Maroc';IAC[122]='BI:Royal Brunei';IAC[123]='RJ:Royal Jordanian';IAC[124]='S7:S7 Airlines';IAC[125]='4Q:Safi Airways';IAC[126]='OV:SalamAir';IAC[127]='SK:SAS';IAC[128]='SV:Saudi Arabian Airlines';IAC[129]='FM:Shanghai Airlines';IAC[130]='MI:SilkAir';IAC[131]='SQ:Singapore Airlines';IAC[132]='H2:SKY Airline';IAC[133]='IE:Solomon Airlines';IAC[134]='SA:South African Airways';IAC[135]='UL:SriLankan';IAC[136]='LX:Swiss Intl Air';IAC[137]='RB:Syrianair';IAC[138]='DT:TAAG - Angola Airlines';IAC[139]='JJ:TAM Linhas Aereas';IAC[140]='EQ:TAME - Linea Aérea del Ecuador';IAC[141]='TP:TAP - Air Portugal';IAC[142]='RO:TAROM';IAC[143]='TG:Thai Airways';IAC[144]='9B:train';IAC[145]='UN:Transaero';IAC[146]='GE:TransAsia Airways';IAC[147]='TU:Tunisair';IAC[148]='TK:Turkish Airlines';IAC[149]='PS:Ukraine International Airlines';IAC[150]='UA:United Airlines';IAC[151]='U6:Ural Airlines';IAC[152]='VF:Valuair';IAC[153]='VN:Vietnam Airlines';IAC[154]='VX:Virgin';IAC[155]='VS:Virgin Atlantic';IAC[156]='VA:Virgin Australia';IAC[157]='DJ:VIRGIN BLUE';IAC[158]='WS:WestJet';IAC[159]='WF:Widerøe';IAC[160]='IY:Yemenia';IAC[161]='ZJ:ZAMBEZI AIRLINES';var CCls=new Array();CCls[0]='0:Economy Class';CCls[1]='1:Business Class';CCls[2]='2:First Class';CCls[3]='7:Premium Economy';var JMaxPaxCnt=9;var FMaxPaxCnt=6;//]]>
+</script>
+
+<script src="../System/Js/GenValidCityPairJS.aspx" type="text/javascript"></script><script type="text/javascript">var IBE_PLAN_DATES_ONEWAY = 'Choose your departure date'
+var IBE_PLAN_DATES_RETURN = 'Choose your departure and return dates'
+function ShowIntersitle() {$('body').addClass('fareFamiliesLoaderBodyBG loader-option-1');$('.fareFamiliesLoader').show();if($('#interdiv')!=null){$('#interdiv').show();$('.footerShadow').attr('style','display:none;');$('#footer').attr('style','display:none;');}MM_findObj('masterblock').style.visibility='hidden';MM_findObj('masterblock').style.clip = 'rect(0 0 0 0)';MM_findObj('masterblock').style.position='absolute';MM_findObj('masterblock').style.height='0';window.scrollTo(0,0);if(navigator.userAgent.toLowerCase().indexOf('msie') != -1) {var image = document.getElementById('searchAnimation');if (image != null || image != 'undefined'){setTimeout('initialize_image();',50);}}return false;}</script><script type="text/javascript">var IBE_SUMMARY_BOX_CUGO_DISCOUNT_TEXT='Inclusive of [Currency] [CugoDiscountAmount] discount.';</script>
+<script type="text/javascript">
+//<![CDATA[
+var provideRedeemOption = 'True';  //]]>
+</script>
+<script type="text/javascript">var SSO_PROTACTED_ACTION_MSG='Please log in again to see your membership benefits.';var SSO_ACTION_GENERIC_MSG='Sorry, we have a technical problem at the moment. Please try again later or get in touch with us.';var SSO_PROFILE_RETERR='Sorry, we have a technical problem at the moment. Please try again later or get in touch with us.';var SSO_NOAUTHCODE='Sorry, we have a technical problem at the moment. Please try again later or get in touch with us.';var SSO_INVLAID_STATEPARAM='Sorry, we have a technical problem at the moment. Please try again later or get in touch with us.';var SSO_PROFILE_RETERR='Sorry, we have a technical problem at the moment. Please try again later or get in touch with us.';var SSO_TOKEN_RETERR='Sorry, we have a technical problem at the moment. Please try again later or get in touch with us.';var SSO_CRISTOKEN_RETERR='Sorry, we have a technical problem at the moment. Please try again later or get in touch with us.';var SSO_SERVICE_ERROR='Sorry, we have a technical problem at the moment. Please try again later or get in touch with us.';var SSO_USERLOGIN_DIFF='You previously logged in using different Skywards details. Please log in using the same Skywards details you used when you logged in last time, or log out and try again.';var LNP0042='The Emirates account is not available. Please contact your local Emirates office.';var LNP0036='Sorry, a Skysurfers member is not eligible to log in to book online.';</script>
+<script src="/CAB/WebResource.axd?d=JoBkLzP19aTuxbWOhHobYlYpsG4n2UIgwBQ5_8-58UgzXL-8cZ90NCY1t32jSZx2wYZ4ZA2&amp;t=637814797746327080" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="33708E91" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+</div>
+        <input type="text" style="display: none" />
+        <input type="password" style="display: none" />
+        <input name="ctl00$hdnConfPage" type="hidden" id="hdnConfPage" />
+        <input name="ctl00$watp_formName" type="hidden" id="watp_formName" value="Flight Search:Search" />
+        <input name="ctl00$watp_skyFormName" type="hidden" id="watp_skyFormName" />
+        <input name="ctl00$watp_modifyFormName" type="hidden" id="watp_modifyFormName" />
+        <input name="ctl00$watp_SkyPID" type="hidden" id="watp_SkyPID" class="watp_SkyPID" value="Guest-IBE" />
+        <input name="ctl00$watp_brandSelectionConfirmTripDirectionIBE" type="hidden" id="watp_brandSelectionConfirmTripDirectionIBE" />
+        <input name="ctl00$watp_upgradeClassChoiceIBE" type="hidden" id="watp_upgradeClassChoiceIBE" />
+        <input name="ctl00$watp_brandUpgradeChoiceTripDirectionIBE" type="hidden" id="watp_brandUpgradeChoiceTripDirectionIBE" class="brandUpgradeChoice" />
+        <input name="ctl00$hdnCurrentCulture" type="hidden" id="hdnCurrentCulture" class="hdnCurrentCulture" value="en-GB" />
+        <input type="hidden" id="hdnToReview" />
+        <input name="ctl00$hdn_WebChat_Status" type="hidden" id="hdn_WebChat_Status" />
+        <input name="ctl00$hdnWebChatErrorCode" type="hidden" id="hdnWebChatErrorCode" />
+        <input name="ctl00$hdnWebChatStarted" type="hidden" id="hdnWebChatStarted" />
+        <input name="ctl00$hdnWebChatStartTime" type="hidden" id="hdnWebChatStartTime" />
+        <input name="ctl00$hdnWebChatFrom" type="hidden" id="hdnWebChatFrom" /> 
+        <input name="ctl00$hdnDDCRetryTimeout" type="hidden" id="hdnDDCRetryTimeout" value="4000" />
+        <input name="ctl00$hdnDDCRetryCount" type="hidden" id="hdnDDCRetryCount" value="1" />
+        <input name="ctl00$hdnDCCOrigin" type="hidden" id="hdnDCCOrigin" value="https://centinelapi.cardinalcommerce.com" />
+        <input type="hidden" id="hdnCugoCode" value="" />
+        <input type="hidden" id="hdnCugoJsonRes" value="" />
+        <input name="ctl00$hdnDdcSwitch" type="hidden" id="hdnDdcSwitch" value="0|1|1" />
+        <input name="ctl00$hdnCSRFToken" type="hidden" id="hdnCSRFToken" disabled="disabled" value="ba290bbf3cec4cb0a6aed06e85f9fb06" />
+
+       
+
+        
+        <input type="hidden" name="ctl00$hdnIsCPMUsed" id="hdnIsCPMUsed" />
+
+        <input type="hidden" name="ctl00$DEXEnabled" id="DEXEnabled" value="false" />
+        <input type="hidden" name="ctl00$POORestrictedCountries" id="POORestrictedCountries" value="false" />
+        <input type="hidden" name="ctl00$DefaultAirportName" id="DefaultAirportName" />
+        <input type="hidden" name="ctl00$RestrictedCountryCode" id="RestrictedCountryCode" />
+        <input type="hidden" name="ctl00$DefaultAirportCode" id="DefaultAirportCode" />
+        
+        <script lang="javascript" type="text/javascript" >
+            dataLayer = [{"memberLoginType":"Public","posSiteCurrencyCode":"NGN","pageCategory":"IBE","platformType":"Desktop","documentTitle":"Emirates | Make a Booking","pageName":"/ IBE / Plan and Book / Make a Booking","domainName":"fly2.emirates.com","visitorSessionID":"97074a01-7ebe-4e5f-8825-905694e31046","serverTimeStamp":"11012024224330","trueClientIP":"102.89.45.224","languageCode":"EN","countryCode":"NG","countryRegion":"NG|AFRICA","pageSubSection":"/ IBE / Plan and Book","serverName":"IBE-DOZ-EC2AMAZ-A3M6JAK","loginType":"Public","visitorLoginState":"Logged Out","memberTier":"Without Profile","personAndGuestID":"Without Profile","skywardsProduct":"n/a","skywardsProductPackageCode":"n/a","searchRouteErrorsIBE":"MUC-FIH","siteErrorCode":"System:IBE:IBE_FQE_ERR002","originSearchIBE":"MUC","destinationSearchIBE":"FIH","originAirport":"MUC","destinationAirport":"FIH","flightDateOutIBE":"2024-03-04","classOutboundSearchIBE":"Economy","nOfAdultsSearchIBE":"1","nOfChildSearchIBE":"0","nOfInfantsSearchIBE":"0","classSearchIBE":"Y","routeSearchIBE":"Y:MUC-FIH","searchLeadTimeIBE":"53 days","searchTripDurationIBE":"0","flightSearchTypeIBE":"Calendar","flightSearchType":"Calendar","typeOfSearchIBE":"One Way","flightSearchMonthIBE":"S:Jan|D:Mar","searchLocationIBE":"Flight","classOutboundCodeIBE":"Y","originCountry":"DE","destinationCountry":"CD","flightSearchPaymentTypeIBE":"Revenue","flightSearchDecisionTypeIBE":"Calendar","flightSearchTripTypeIBE":"One Way","flightTripType":"One Way","flightAirlineTypeIBE":"EK","originCountryflightRoute":"DE","flightDepartureDate":"2024-03-04","cabinClassflightRoute":"Y","numberOfAdultsFlight":"1","numberOfChildrenFlight":"0","numberOfInfantsFlight":"0","numberOfTeenagersFlight":"0","productTypeIBE":"Flight","destinationAirportFlightRoute":"FIH","originAirportflightRoute":"MUC","posCurrencyCode":"EUR"}];
+            PushArrayIntoDL();
+            try {
+                $('body').addClass($('#hdnCurrentCulture').val());
+            } catch (e) { }
+        </script>
+        
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NVKM49" height="0" width="0"
+                style="display: none; visibility: hidden" title="google tag manager"></iframe>
+        </noscript>
+        <script lang="javascript" type="text/javascript" >
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-NVKM49');    
+        </script>
+        
+        
+        
+
+        <div id="masterblock">
+            <div id="gnmasthead">
+                <input type="hidden" name="ctl00$hdnTabValue" id="ctl00_hdnTabValue" value="2" />
+                <input type="hidden" name="ctl00$hdnWWS" id="ctl00_hdnWWS" value="WWS" />
+                <input type="hidden" name="ctl00$hdnAjaxURL" id="hdnAjaxURL" value="CtrlGenIBE.aspx?temp=638406098107835912" />
+
+                <div id="GNdiv" class="gnmainWrapperNewDiv">
+                    <span id="spErrorText" style="display: none">
+                        Warning:
+                    </span>
+                    <span id="spErrorsText" style="display: none">
+                        Warning:
+                    </span>
+                    
+                    
+                    
+
+<div class="ek ek-wrapper new-global-nav">
+<div class="skip-to hidden-xs hidden-sm navigation-skinny">
+<div class="container">
+<div class="row">
+<div class="col-md-6 pad0">
+<button id="skip-to-main" class="btn btn-lg btn-link sr-only sr-only-focusable" role="link" data-ek-id="skip-to-content">
+<span class="inner">
+<span class="inner-text">
+Skip to main content
+</span>
+<span class="icon icon-big-arrow-right" aria-hidden="true"></span>
+</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="global-navigation-wrapper">
+<div class="global-nav-toolbar navigation-skinny">
+<div class="container">
+<div class="row">
+<div class="col-xs-12" style="height: 54px">
+<div class="logo-emirates-wrapper logo-wrapper-new">
+
+<a href="/SessionHandler.aspx?pageurl=index.aspx&pub=/ng/english&page=/ng/english/&target=ibe.aspx" id="ctl00_IBEHeader_NEW_EK_LOGO_AN" class="logo-emirates-new logo-slim" data-id="header_nav_link" data-link="Back to Homepage" target="_self">
+<img id="ctl00_IBEHeader_NEW_EK_LOGO" src="/media/emirates-horizontal-l140x56_tcm209-153888.svg" />
+<span class="sr-only">
+Emirates logo</span>
+</a>
+</div>
+
+<div class="right-nav">
+<ul id="rightNavUL">
+<li class="country-selector-list-item">
+<div class="right-nav">
+<a id="ctl00_IBEHeader_ChooseCntryandLang" data-id="header_nav_link" aria-label="Country selection: selected country - Nigeria, language - English" class="country-selector-list-item-link" onclick="return;" data-ek-id="select-language-menu" data-close-caption="Close" aria-expanded="false" role="link" data-link="Country Selector" href="#" data-init-caption="NG English">
+<span class="arrows pull-right" aria-hidden="true">
+<!---->
+</span>
+<span class="country-flag-icon" aria-hidden="true">
+
+<span class="svg-dims svg-WW2"></span>
+</span>
+<span class="country-code" aria-hidden="true">NG</span>
+<div class="arrow-up">
+<!-- -->
+</div>
+</a>
+</div>
+<div class="container popups country-selector-list-holder">
+<div class="row">
+<div class="col-md-12">
+<div class="country-selector-input-holder">
+<h2>
+Choose your country or territory</h2>
+<div class="input-ek">
+
+<input type="text" autocomplete="off" id="search-country-input" class="search search-country-txt" aria-describedby="country-search-desc">
+<div class="input-ek-label">
+<label for="search-country-input">
+Search</label>
+<span aria-hidden="true" id="country-search-desc" class="sr-only">
+Type the name of the country you want to search for</span>
+</div>
+</div>
+<div class="sr-only" id="results-text" aria-hidden="true">
+<span aria-hidden="true" id="results-count"></span>
+results found
+</div>
+<div aria-hidden="true" class="sr-only" id="alert-message" aria-live="polite"></div>
+</div>
+</div>
+</div>
+<div class="country-list-all-holder" tabindex="-1">
+<fieldset>
+<legend class="sr-only">
+Selected country</legend>
+<div class="row">
+<div class="col-md-12">
+<span class="devider-title" aria-hidden="true">
+Selected country
+</span>
+</div>
+</div>
+<ul role="presentation">
+<li>
+<div class="row">
+<div class="country-list-item mt15">
+<div class="col-md-1">
+
+<span class="svg-dims svg-WW"></span>
+</div>
+<div class="col-md-11">
+<div id="ctl00_IBEHeader_selectedCountryDiv" class="row country-names" aria-hidden="true"><span>Nigeria</span></div>
+<div id="ctl00_IBEHeader_SelectedCountryLangDiv" class="row country-languages"><div class="js-langParent"><span class="selected-language"><span class="sr-only">Nigeria</span>English</span><input type="hidden" class ="cultureValue"  id="inpCulture" runat="server" value="/ng/english" /></div></div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</fieldset>
+
+<div class="row">
+<div class="col-md-12">
+<span class="devider-title" aria-hidden="true">
+All countries/territories</span>
+</div>
+</div>
+<fieldset>
+<legend class="sr-only">
+All countries/territories</legend>
+<span class="sr-only">
+Choosing a language will direct you to the preferred language site.</span>
+<div class="all-country-list-holder">
+<ul role="presentation">
+
+</ul>
+</div>
+</fieldset>
+<div class="row">
+<div class="col-md-12">
+<span class="devider-title">
+If you can't find your country or language, please visit our Global site.</span>
+</div>
+</div>
+<div class="global-country-list-holder">
+<ul role="presentation">
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="country-selector-close-button">
+<a href="#" aria-label="close" data-close-caption="Close" data-ek-id="select-language-menu">
+<!-- -->
+</a>
+</div>
+</div>
+</div>
+
+</li>
+
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+                </div>
+            </div>
+            
+
+            <div id="mainContainer_Test" style="display: none;">
+                <div id="main-header-area">
+                    <img id="ctl00_SA_FPO" alt="" src="../Images/photos/banner_top/4100-4500b_flight-search.jpg" style="height:130px;width:980px;" /><br />
+                </div>
+            </div>
+            <span class="newWindowContent visually-hidden" aria-hidden="true" id="newWindowContent">
+                (Opens a new window)
+            </span>
+            <span class="spDefaultSelectedText visually-hidden" aria-hidden="true" id="spDefaultDDLSelectedText">
+                Selected: [VAL]
+            </span>
+            <span style="display: none;">
+                <input type="hidden" id="hdnAutoSuggestInvalidTxt" value=", the information you`ve entered is incorrect and it will be cleared when you tab out." />
+            </span>
+            <div role="main" id="mainContentAccess">
+                
+                
+                
+                
+<script type="text/javascript" src="../js/jquery/jquery.colorbox-min.js?v=14122023" integrity="sha256-iBgiplMbQKZ2owPHk0fackIaUIG1m5eunfWu8aFhsjg= sha384-kN+UEs1oybMM0ZDRy5N67yW/gvarfQn+jXPx/4TWmDod6HCliW6o6u/o32iMUOvI sha512-Gi6o2VctBo8eOV2zBYTSPNE0EykzV00a5hXQH7lyi2BpB2kbhOEGj4j5FQ39vWRYSRM1V8WOCoWUHIxzSnDfjg==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/jquery/jquery.colorbox.js?v=14122023" integrity="sha256-HRWwISY1u3z70nNfub398y6k20GeoXlv0OQ4NTH6Ars= sha384-07vXuV032hX9B7INzHLSGJ/YL/OkXYpBURsi2d5R4FhAFk6GScPTixzw1LoSbicz sha512-MtbJXtbh5ncHFCJtbgz2OjIcA5P3Rp3Ts6eQ7yTpX7EEfAZNABWrz3ey3NJ9xhB+JpmpcyABLXTa4GSxdsYOTw==" crossorigin="anonymous"></script>
+
+<script type="text/javaScript" src="../js/fareFamiliesFBR.min.js?v=14122023" integrity="sha256-DVvH4CD3lpFrZ2A5CrgfH21+yTtGKpHGcCYy8Nc8T+8= sha384-Dhbfbh7JCakOxMF0+cqMPkHeh8UI9v3QzckLjaea+GvGtYse0nH0iL4s+u/ZrFqF sha512-Pjej3p8hCz0ra0rLg3sYFqgKVfWIl/BaE8sZIuUUW9GjvetiEhmQHO1n1NdUIyIpIH1TlACe5nk1GO4p3T8VJw==" crossorigin="anonymous"></script>
+<script type="text/javaScript" src="../js/accessibility.min.js?v=14122023" integrity="sha256-mPDlEjaKkDpmnh+Ahk71uE1JhaUm0j2g+/v3LcpQrhw= sha384-Nx2XK6SjpdKobn1FbUHXOT+b3EIg4v9uoZTwnabLR+t+TIiqvC5tfSTUwTDZKclX sha512-TFmMdQjPGARgthRAaBDw4MOW8x0qz3N/ezhPoIeo9M7Z1ZXurQdmp3QIB3McnwDsn+3ReTgbVCq8KwjQL/Ll4Q==" crossorigin="anonymous"></script>
+<script type="text/javaScript" src="../js/CugoLanding.min.js?v=14122023" integrity="sha256-AyIenFQTPoOmlfPGlJKnEKxnpT3u8pnJV38M73u3WLc= sha384-OmJnH3BAgZLodgSuRlbz46wwIVZnTxw9jLzkG20C8ADLseoO5XchtQegkFKVKs5q sha512-qiUdua0VlmdXW5Z6Kx7qd9fROu45aSDx1Fv1CAVYo2j69ZwvEF1MCWpgBKnQqdm85R6d6/etpICoNjvBXmKdgQ==" crossorigin="anonymous"></script>
+<link id="ctl00_c_IBELink16" rel="stylesheet" type="text/css" href="../css/SSR_override.min.css?v=14122023" integrity="sha256-G4VWx/wchoiOf2xjccXaPbRaq1kPqnB9T59Br5ZNnOg= sha384-hAIRdCtKQ5E36sX5eKOQ/UsKHL+O2q3z/VADaL4h6dkbn5n6fFGNOLdSn7doMEIN sha512-OnATV0pbYySp6U22U2DqZ2pkKCArXfHxtbhPkKa9sNiinO1AWURjMyHrCqw1MziPBhF4B93c6iTZzqCettET8w==" crossorigin="anonymous" />
+
+
+
+<script type="text/javascript">
+var IBECNGPWD001 = 'Sorry, your passwords do not match. Please check and try again.';
+var SME0Pass = 'Please enter a valid password.';
+var NotPermitted = 'Info not available';
+$(document).ready(function () {
+//Summary Box - deleting shopping cart
+localStorage.removeItem('getFlightDetails');
+});
+</script>
+
+<script type="text/javaScript" src="../js/page/SearchAvailability.min.js?v=14122023" integrity="sha256-MbbSe/RhlPb2Yw+xclMpU7v0IZxG794ECURTO4BH/Zo= sha384-VJMkOPAyRG8zqTh4dBD9jh3EffbXHmPKUSbWt2OBatgw9n7JxAB6GQtPrNDJNy79 sha512-Gtbs3wW/HzDixL6h3IDD2n8UqZ8oaV/SlzTwHydWVmBQPprai4wGaWq+I3iZL/O3QyDM4XVA6FelZ1SW3fT2Fw==" crossorigin="anonymous"></script>
+<input type="hidden" name="ctl00$c$gtm_hdnExternalCugo" id="gtm_hdnExternalCugo" value="N" />
+<input type="hidden" name="ctl00$c$hdnSystemErr" id="hdnSystemErr" value="N" />
+<input type="hidden" name="ctl00$c$hdnErrVal" id="hdnErrVal" />
+<input type="hidden" name="ctl00$c$hdnFSystemErr" id="hdnFSystemErr" value="Y" />
+<input type="hidden" name="ctl00$c$hdnFErrVal" id="hdnFErrVal" value="System:IBE:IBE_FQE_ERR002" />
+<input type="hidden" name="ctl00$c$hdnIsIMAPMobileDevice" id="ctl00_c_hdnIsIMAPMobileDevice" value="false" />
+<input type="hidden" name="ctl00$c$hdnMapComp" id="ctl00_c_hdnMapComp" />
+<input type="hidden" name="ctl00$c$hdnMapErr" id="ctl00_c_hdnMapErr" />
+<input type="hidden" name="ctl00$c$hdnSUrl" id="ctl00_c_hdnSUrl" />
+<input type="hidden" name="ctl00$c$hdnMapURL" id="ctl00_c_hdnMapURL" />
+<input type="hidden" name="ctl00$c$hdnIbe" id="ctl00_c_hdnIbe" />
+<input type="hidden" name="ctl00$c$hdnLogo" id="ctl00_c_hdnLogo" />
+<input type="hidden" name="ctl00$c$Hash" id="ctl00_c_Hash" />
+<input type="hidden" name="ctl00$c$hdnIntroText" id="ctl00_c_hdnIntroText" value="~1Enter your travel details and choose your search preferences below. Select &amp;lt;strong>Find flights&amp;lt;/strong> when you`re done.~2Enter your travel details and choose your search preferences below. Select &amp;lt;strong>Find flights&amp;lt;/strong> when you are ready to proceed.~3You can use this page to create complex itineraries involving more than one destination. Enter your travel details, adding or removing destinations as necessary, and select your search preferences below. Click &amp;lt;strong>Find Flights&amp;lt;/strong> when you are done.~4)You can use this page to make stopovers in either direction. Enter your travel details and select your search preferences below. Click &amp;lt;strong>Find Flights &amp;lt;/strong>when you are done.~5Please log in to redeem Skywards Miles for your itinerary.~6&amp;lt;strong>Welcome back, &amp;lt;span id=&amp;quot;SKUser&amp;quot;>&amp;lt;/span>.&amp;lt;/strong>" />
+<input type="hidden" name="ctl00$c$hdn90days" id="ctl00_c_hdn90days" />
+<input type="hidden" name="ctl00$c$hdnAnyQFSector" id="ctl00_c_hdnAnyQFSector" />
+<input type="hidden" name="ctl00$c$hdnNoOfDest" id="ctl00_c_hdnNoOfDest" value="2" />
+<input type="hidden" name="ctl00$c$hdnMaxNoOfDest" id="hdnMaxNoOfDest" value="10" />
+<input type="hidden" name="ctl00$c$hdnMaxNoOfDestForPartner" id="hdnMaxNoOfDestForPartner" value="3" />
+<input type="hidden" name="ctl00$c$hdnIsRedeem" id="ctl00_c_hdnIsRedeem" value="0" />
+<input type="hidden" name="ctl00$c$hdnRedeemTab" id="ctl00_c_hdnRedeemTab" value="1" />
+<input type="hidden" name="ctl00$c$hdnIsPartnerRedeem" id="ctl00_c_hdnIsPartnerRedeem" value="0" />
+<input type="hidden" name="ctl00$c$hdnIsRedeemOneWay" id="ctl00_c_hdnIsRedeemOneWay" value="1" />
+<input type="hidden" name="ctl00$c$hdnPaymentTypeJSD" id="ctl00_c_hdnPaymentTypeJSD" value="1" />
+<input type="hidden" name="ctl00$c$hdnItenaryTypeJSD" id="ctl00_c_hdnItenaryTypeJSD" value="1" />
+<input type="hidden" name="ctl00$c$hdnIsWiderCircle" id="ctl00_c_hdnIsWiderCircle" value="false" />
+<input type="hidden" name="ctl00$c$hdnRetOneway" id="ctl00_c_hdnRetOneway" value="0" />
+<input type="hidden" name="ctl00$c$hdnErrorText" id="ctl00_c_hdnErrorText" value="IBE_FQE_ERR002" />
+<input type="hidden" name="ctl00$c$hdnData" id="ctl00_c_hdnData" />
+<input type="hidden" name="ctl00$c$pageNamePop" id="ctl00_c_pageNamePop" value="SearchAvailability" />
+<input type="hidden" name="ctl00$c$guidvalue" id="ctl00_c_guidvalue" />
+<input type="hidden" name="ctl00$c$captchasession" id="ctl00_c_captchasession" />
+<input type="hidden" name="ctl00$c$hdnLogin" id="ctl00_c_hdnLogin" />
+<input type="hidden" name="ctl00$c$hdnLoginHeader" id="ctl00_c_hdnLoginHeader" value="Log in to your Emirates Skywards account" />
+<input type="hidden" name="ctl00$c$hdnInterlinePrice" id="ctl00_c_hdnInterlinePrice" />
+<input type="hidden" name="ctl00$c$hdnInterlineSchedule" id="ctl00_c_hdnInterlineSchedule" />
+<input type="hidden" name="ctl00$c$hdnBothInterlineSchedule" id="ctl00_c_hdnBothInterlineSchedule" />
+<input type="hidden" name="ctl00$c$hdnSwitchInterlinePrice" id="ctl00_c_hdnSwitchInterlinePrice" value="true" />
+<input type="hidden" name="ctl00$c$hdnIsSme" id="ctl00_c_hdnIsSme" />
+<input type="hidden" name="ctl00$c$hdnIsOnlyBR" id="hdnIsOnlyBR" value="N" /> 
+<input type="hidden" name="ctl00$c$hdnStopOver" id="ctl00_c_hdnStopOver" value="1" />
+<input type="hidden" name="ctl00$c$hdnOneWay" id="ctl00_c_hdnOneWay" value="1" />
+<input type="hidden" name="ctl00$c$hdnInterlineSector" id="ctl00_c_hdnInterlineSector" value="false" />
+<input type="hidden" name="ctl00$c$OJFromSA" id="ctl00_c_OJFromSA" />
+<input type="hidden" name="ctl00$c$OJToSA" id="ctl00_c_OJToSA" />
+<input type="hidden" name="ctl00$c$AdultGBE" id="AdultGBE" value="1" />
+<input type="hidden" name="ctl00$c$OFW" id="OFW" value="0" />
+<input type="hidden" name="ctl00$c$hndIsSPDPA" id="ctl00_c_hndIsSPDPA" value="N" />
+<input name="ctl00$c$hdnIsListCUGO" type="hidden" id="ctl00_c_hdnIsListCUGO" />
+<input name="ctl00$c$hdnIsValidCUGO" type="hidden" id="ctl00_c_hdnIsValidCUGO" />
+<input name="ctl00$c$hdnCUGODomain" type="hidden" id="ctl00_c_hdnCUGODomain" />
+<input name="ctl00$c$hdnCUGOUniqueKey" type="hidden" id="ctl00_c_hdnCUGOUniqueKey" />
+<input name="ctl00$c$hdnClearCUGO" type="hidden" id="ctl00_c_hdnClearCUGO" />
+<input name="ctl00$c$hdnCUGOPasswordReq" type="hidden" id="ctl00_c_hdnCUGOPasswordReq" />
+<input type="hidden" id="hdnFFClick" value="0" />
+<input type="hidden" id="hdnCugoDate" value="" />
+<input type="hidden" id="hdnCugoPaxCount" value="" />
+<input type="hidden" id="hdnlimitPerPNR" value="" />
+<input type="hidden" id="hdnCugoTripType" value="" />
+<input type="hidden" id="hdnCugoCabinFirst" value="" />
+<input type="hidden" id="hdnCugoCabinFirst1" value="" />
+<input type="hidden" id="hdnCugoCabinMulti1" value="" />
+<input type="hidden" id="hdnCugoCabinMulti2" value="" />
+<input type="hidden" id="hdnCugoCabinMulti3" value="" />
+<input type="hidden" id="hdnCugoCabinMulti4" value="" />
+<input type="hidden" id="hdnCugoCabinMulti5" value="" />
+<input type="hidden" id="hdnCugoCabinMulti6" value="" />
+<input type="hidden" id="hdnCugoCabinMulti7" value="" />
+<input type="hidden" id="hdnCugoCabinMulti8" value="" />
+<input type="hidden" id="hdnCugoCabinMulti9" value="" />
+<input type="hidden" id="hdnCugoCabinMulti10" value="" />
+<input name="ctl00$c$hdnCugoEKFlow" type="hidden" id="ctl00_c_hdnCugoEKFlow" />
+<input type="hidden" name="ctl00$c$hdnCugoEkAutologin" id="hdnCugoEkAutologin" />
+<input type="hidden" name="ctl00$c$hdnCugoEkAutologinGuest" id="hdnCugoEkAutologinGuest" />
+<input type="hidden" name="ctl00$c$hdnIsSkyPlusMember" id="hdnIsSkyPlusMember" value="N" />
+
+<input type="hidden" name="ctl00$c$hdnSelectedBRPax" id="hdnSelectedBRPax" />
+<input type="hidden" name="ctl00$c$hdnPBSelectedBRPax" id="hdnPBSelectedBRPax" />
+<input type="hidden" name="ctl00$c$hdnBRMemberPaxCnt" id="hdnBRMemberPaxCnt" />
+
+
+<div id="mainContainer" class="noRightCol">
+<div id="dvFareFamilies" class="fare-families-container">
+<a name="mainContent"></a>
+<div id="ctl00_c_pH_dvTitle" class="ts-title">
+<h1 id="ctl00_c_pH_heading1" class="ts-title__heading">
+Book a flight
+
+<span id="dvBestPriceSite" class="BestPrice-Site" style="display: none" aria-live="polite" aria-relevant="all">
+<a href="/transfer/book/about-booking-online/emirates-best-price-guarantee/" id="ctl00_c_pH_aPageHeader" target="_blank" class="fare-best-price-logo">
+<img id="ctl00_c_pH_imgBestPrice" src="/media/best_price_2_tcm209-153800.png" alt="Best Price" />
+</a>
+</span>
+</h1>
+<div class="ts-title__right"></div>
+</div>
+
+<div id="Div1">
+<div id="flightTabDiv">
+
+<script type="text/javaScript" src="../js/jquery.makebooking.min.js?v=14122023" integrity="sha256-Zd4YMPlBS9Chtkhy9nlVKEmQy/NlptDTFraXdKy1J/U= sha384-srRgZwOV52a4w4yd3Lftfjf77363JDhMhaa9Ob257MgaZMSOSqZm7DOBvB8Z+EgO sha512-qZ5SAW4AhKqCG8DRXzMlLcxOpsIWHpWbw2f5i7xv4L/cnXykIgP8JMjKVsEt/EW2wlJw0s8ecS3HXvZE61WGyw==" crossorigin="anonymous"></script>
+<script type="text/javaScript" src="../js/main_HPF.min.js?v=14122023" integrity="sha256-uA6qyBeng/+699lOZobiZq3QT6R2wohNHfl8LegGnKA= sha384-iwPm3P7LCP+HPHl7rZaCxabe8JGt8QOlzN8mxfxTeY3JAyBMmWMS7kNPeBx3t7v3 sha512-TCwpONUIyXAqRWRfj84UrZJuyemB65HRX3oQzs9F9WBzTVkz1loyFO0b4QJqSfdmfe8V2Hpv/R+MRAF/y1v0Yg==" crossorigin="anonymous"></script>
+<script type="text/javaScript" src="../js/menu_HPF.min.js?v=14122023" integrity="sha256-uBF1G7e2h3sybRc3cVNqlYFAkIvzOEVX2fRnOTLJnZ8= sha384-DSMUjTEXgaq7nKV6l9YeifQp2jITnwFo5BhBnAvDBxfCMSMxqr91Mr/pO5rTldee sha512-fUl1CLto0WOuqTiNr1znTyHEQkBtiaxRvGDupP6bX4CMiApsJvNpRCyjdGX0D504/7reS5n4A77QLB9Ng3ZP9g==" crossorigin="anonymous"></script>
+<script type="text/javaScript" src="../js/jquery.main.min.js?v=14122023" integrity="sha256-niEBaJtNOZcu4gKZHlZ61ow1SBBYdimgBwqpv/78VCM= sha384-H8+gAT+hL/pCGzFErROexGLGExkXvsHMVrPDMfSjn7hat7T09NT7rd2sKcw8NT6a sha512-XD9jZh3KsJXxAhR/GSe1bGx/w56Z71qVEKcuaVnSKJNz/QayLN9Tl+CxRXjhghsfKl6B7uuZjn5P11zlTluXzw==" crossorigin="anonymous"></script>
+<script type="text/javaScript" src="../js/flx_jquery.main.min.js?v=14122023" integrity="sha256-qLXroty4xqIGGF5Vdit/tQFSh47hcURCk2YN/TRx5Ms= sha384-u9mlEUbxUwSplAYqJfmEaf+efQ9iNx9EuLDqhFvQagQJUCKiEbu+TtTflwYrD4Zc sha512-pXfFlamDaPSxfpMKlXMPsWVABVNEjkiGmGh7SgWKirP0aQIK3cGyU30+8A/UCYMPRIftgnR6qztL/EQ7li1DIA==" crossorigin="anonymous"></script>
+
+
+
+
+<!--[if lte IE 8]> <script language="javascript" type="text/javascript" src="../js/ieFix.js"></script><![endif]-->
+<!-- BRSR CHANGES START [Payment method display changes + new login teaser, BRSR-497 / BRSR-498] (added new login teaser section) -->
+
+<div id="ctl00_c_LoginPopUpButton" class="fare-login-container bordered-row pmu-login-teaser">
+
+<div class="d-table">
+
+<div class="pmu-login-teaser-skywards-logo d-table-cell v-bottom pb0">
+<img src="/media/CoinsOnair_WIFI_326x155_tcm209-154489.png" id="ctl00_c_card_logo" alt="Emirates Skywards membership tiers" title="Emirates Skywards membership tiers" style="display:block;" />
+</div>
+
+<div style="display:none" class="pmu-login-teaser-icons d-table-cell v-middle">
+
+<img src="/media/new_miles_tcm209-154769.png" id="cash_miles_icon" class="cm-payment-section-header-icon" alt="" title="Cash+Miles" style="display:block;" aria-hidden="true" />
+
+
+</div>
+
+<div class="pmu-login-teaser-desc d-table-cell v-middle">
+
+<p class="pmu-login-teaser-header mb5">
+
+Log in to Emirates Skywards
+</p>
+<p>
+Make the most of your benefits and unlock exclusive member-only offers for your flight.</p>
+
+</div>
+
+<div class="d-table-cell v-middle text-right">
+
+<a id="btnLogin" href="javascript:void(0);" loadiframe="true" data-modal-content="sso-login-content" sso-action="load" sso-login-required="modal" class="login-btn" aria-labelledby="lbskywardsLoginbtnDesc" aria-describedby="lbskywardsLoginbtnDesc" style="background: #275c74 no-repeat 25px center;">
+Log in
+<span id="lbskywardsLoginbtnDesc" class="visually-hidden">
+Select to log in if you are an Emirates Skywards member. Skywards login (opens a dialog).
+</span>
+</a>
+
+
+
+
+<div class="clearBoth">
+</div>
+<fieldset>
+<legend aria-hidden="true">
+If you’re an Emirates Skywards member, log in to access your saved information and redeem Miles.</legend>
+<div id="ctl00_c_introTextContainer" class="redeemMilesForm" style="visibility: hidden; display: none;">
+
+<div class="welcome" style="display: none;">
+<span id="ctl00_c_lblIntro" style="color:#666666;">Enter your travel details and select your search preferences below. Click <strong>Find Flights</strong> when you are done.</span>
+</div>
+<div>
+</div>
+<table border="0" cellpadding="0" cellspacing="0" class="redeemMilesCheck" role="presentation">
+<tr id="ctl00_c_RMRow" style="display:none;visibility:hidden;">
+	<td id="ctl00_c_BRTD" class="formLabel" width="60"></td>
+	<td>
+
+<input name="ctl00$c$chkredeemMiles" type="checkbox" id="ctl00_c_chkredeemMiles" class="formField" disabled="disabled" onclick="javascript: ChkRedeemMiles_Click(&#39;ctl00_c_chkredeemMiles&#39;);" style="color:#A0978A;filter:alpha(opacity = 50);opacity:0.50;" /></td>
+	<td class="formSubLabel ">
+<label id="ctl00_c_AL_RM_Info1" for="ctl00_c_chkredeemMiles" style="Color:#A0978A;">
+Redeem Miles
+</label>
+</td>
+	<td id="ctl00_c_skysurfersMenu" class="disabled">
+<label for="ctl00_c_ddlMinorAccntSelect" class="label-hidden">
+Redeem Miles</label>
+<select name="ctl00$c$ddlMinorAccntSelect" id="ctl00_c_ddlMinorAccntSelect" class="formField" disabled="disabled">
+	</select>
+</td>
+</tr>
+
+</table>
+<p id="ctl00_c_pInfoText">
+<span id="ctl00_c_RED_INFO_NEW">Select this option to search for tickets you can pay for with Skywards Miles.</span>
+<span id="ctl00_c_SKY_SURFER_INFO">Your Skywards account is linked to [MINOR_COUNT] Skysurfers. To use Miles from different accounts, choose the account in the menu to the left.</span>
+<span id="ctl00_c_FC_RD" style="display:none"><br/>A 10% mileage discount on standard reward values will apply to all Emirates flight rewards booked online on or before 31<sup>st</sup> December 2007.</span>
+</p>
+</div>
+<div class="clearBoth"></div>
+</fieldset>
+</div>
+
+</div>
+
+</div>
+
+<div id="ctl00_c_dvCrisOutageMsg" class="greenMessage" style="display:none;">
+<span id="lblCrisOutageMessage"></span>
+</div>
+<div id="ctl00_c_errorPnl" class="errorPanel error" style="display:block;"><span id="sHLErrorsText" tabindex="0" role="heading" aria-level="2">Warning:</span><br /><ul><li>There are no flights offered for the dates or route you selected. Please try a different search or <a href="https://www.emirates.com/english/help/offices/?pub=autodetect" target="_blank" class="bodyLink">get in touch with us<span class="visually-hidden">(the link opens in a new window)</span></a> for help.</li></ul></div>
+<div class="cugo-warning-msg" id="dvCugoWarning" style="display:none;">
+<span class="bold" id="cugoWarningText">Please make sure all your information is correct before you continue with your search.</span>
+</div>
+<div class="ts-promotional-banner ts-comp" data-ts-comp="PromotionalBanner" data-ts-comp-defer="false" style="display:none;" id="dvPromoBanner">
+<div class="ts-promotional-banner__content-wrapper">
+<!-- Header -->
+<div class="ts-promotional-banner__header">
+<h2 tabindex="-1">
+<span class="ts-promotional-banner__header-text"><span id="ctl00_c_ltCugobannerTitle">Citibank promotional offer</span> </span>
+</h2>
+<p class="ts-top-ribbon">
+<span class="cugo-count"></span>
+<span class="ts-top-ribbon__shade"></span>
+</p>
+</div>
+<!-- Main -->
+<div class="ts-promotional-banner__main">
+<img src="#" id="ctl00_c_cugoPromoImage" class="ts-promotional-banner__main-media" alt="Citibank let the journey begin" />
+<div class="ts-promotional-banner__main-table">
+<div class="ts-promotional-banner__main-cell">
+
+<div class="ts-promotional-banner__list-wrapper" style="display:none;">
+<ul id="ctl00_c_bulletInfo" class="ts-promotional-banner__list">
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div id="ctl00_c_dvCugoMoreInfo" class="ts-promotional-banner__footer-col-first">
+<a href="javascript:void(0);" id="ctl00_c_CugoMoreInfoLink" class="ts-promotional-banner__footer-link ts-open-modal" data-ts-modal="pb-moreinfo">
+<span class="ts-promotional-banner__footer-text">More information</span>
+<span class="ts-aria-only">Opens a dialog</span>
+</a>
+</div>
+
+<div id="ctl00_c_dvCugoTandC" class="ts-promotional-banner__footer-col-second">
+<a href="javascript:void(0);" id="ctl00_c_CugoTandCLink" class="ts-promotional-banner__footer-link ts-open-modal" data-ts-modal="pb-tac">
+<span class="ts-promotional-banner__footer-text">Terms and conditions</span>
+<span class="ts-aria-only">Opens a dialog</span>
+</a>
+</div>
+<!-- Close button -->
+<a href="javascript:void(0);" class="ts-promotional-banner__close ts-open-modal" data-ts-modal="pb-promocode-alert">Close
+<span class="ts-aria-only">Opens a dialog</span>
+</a>
+</div>
+<!-- Modal container -->
+<div class="ts-promotional-banner__modals ts-modal-ibe-override">
+<!-- Modals for footer sections -->
+<div class="ts-modal" role="dialog" aria-labelledby="ts-modal-label-pb-moreinfo" aria-describedby="ts-modal-description-pb-moreinfo" data-ts-comp="Modal" data-ts-modal="pb-moreinfo" data-ts-close-button="">
+<div role="document">
+<div class="ts-mask"></div>
+<div class="ts-content">
+<header>
+<h1 id="ts-modal-label-pb-moreinfo" data-ts-focus-only-once="" tabindex="0">More information</h1>
+</header>
+<div id="ts-modal-description-pb-moreinfo" class="ts-modal-section-scrollable" tabindex="-1">
+<div class="ts-modal-text-subsection js-cugo-moreinfo">
+</div>
+</div>
+<button class="ts-icon-close" data-ek-id="ek-modal-close" role="link">
+<span>Close</span>
+</button>
+
+</div>
+</div>
+</div>
+<div class="ts-modal" role="dialog" aria-labelledby="ts-modal-label-pb-tac" aria-describedby="ts-modal-description-pb-tac" data-ts-comp="Modal" data-ts-modal="pb-tac" data-ts-close-button="" id="divTandCModal">
+<div role="document">
+<div class="ts-mask"></div>
+<div class="ts-content">
+<header>
+<h1 id="ts-modal-label-pb-tac" data-ts-focus-only-once="" tabindex="0">Terms and conditions</h1>
+</header>
+
+<div id="ts-modal-description-pb-tac" class="ts-modal-section-scrollable" tabindex="-1">
+<div class="ts-modal-text-subsection js-cugo-TandC">
+</div>
+</div>
+<button class="ts-icon-close" data-ek-id="ek-modal-close" role="link">
+<span>Close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="ts-promotional-banner__modals ts-modal-ibe-override ts-modal-width-message">
+
+<!-- Promocode altert modal -->
+<div class="ts-modal" role="dialog" aria-labelledby="ts-modal-label-pb-promocode-alert" aria-describedby="ts-modal-description-pb-promocode-alert" data-ts-comp="Modal" data-ts-modal="pb-promocode-alert" data-ts-close-button="">
+<div role="document">
+<div class="ts-mask"></div>
+<div class="ts-content">
+<header>
+<h1 id="ts-modal-label-pb-promocode-alert">Promotional code alert</h1>
+</header>
+<div id="ts-modal-description-pb-promocode-alert" tabindex="-1">
+
+<div class="ts-modal-section-messages">
+<p>
+You are about to delete the promotional code you just entered. Do you want to proceed?
+</p>
+</div>
+<div class="ts-modal-section-buttons">
+<a href="javascript:void(0);" class="ts-cancel-button ts-grey-button ts-close-modal">Cancel</a>
+<a href="javascript:void(0);" class="ts-action-button red-button ts-clear-promocode">Delete</a>
+</div>
+
+</div>
+<button class="ts-icon-close" data-ek-id="ek-modal-close" role="link">
+<span>Close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="../js/page/commonControl.min.js?v=14122023" integrity="sha256-wB4IhRkQLFfb8xAC2pwnELIzi93EaS6Pnig/JJUOT+o= sha384-64AVb0e8YegsMet2jVfUGYX9ylefGAcFJbPNfmp6Bs4BjP9huyrJyh2D33OMvptp sha512-AihQAwb9QDmrQMPp0cryJtbK3wHk/JAuG5JE9UaqMihmix3WzcPuLt3iwRkONOA8hq4psp1uBkdgJyKNhVlgjQ==" crossorigin="anonymous"></script>     
+<div id="ctl00_c_ctrlSkyMember_dvSkyUser" class="fare-user-bar-holder" style="display:none;">
+<span class="visually-hidden">
+Member details</span>
+<div id="ctl00_c_ctrlSkyMember_dvSkyTier" class="fare-user-bar blue-bar Sky-Tier-User">
+<span id="ctl00_c_ctrlSkyMember_cufon_Label_For_Skyuser" class="cufon-medium" aria-label="">
+
+
+</span>
+<span class="right">
+0Skywards Miles
+</span>
+<div class="clearfix"></div>
+</div>
+
+
+<div id="ctl00_c_ctrlSkyMember_dvPassengerSkyTier" class="fare-user-bar blue-bar Sky-Tier-User display-flex" style="display: none">
+<div id="ctl00_c_ctrlSkyMember_dvSkywardsTier" class="skyward-tier-info"> 
+<img src="../CommonControls/#" id="ctl00_c_ctrlSkyMember_tier_logo" class="" />
+</div>
+<div class="skyward-profile-info">
+<span id="ctl00_c_ctrlSkyMember_cufon_Label_For_Pas_Skyuser" class="cufon-medium floatL" aria-label="">
+
+</span>
+<span class="floatL clearL tier-details">
+
+<span class="tier-seperator">
+
+</span>
+<span class="tier-details">
+
+</span>
+</span>
+</div>
+<div class="skyward-profile-miles-info">
+<span class="floatR skymiles">
+Skywards Miles
+</span>
+<span class="floatR clearR">
+0
+</span>
+</div>
+<div class="clearfix"></div>
+</div>
+
+
+
+
+
+<input name="ctl00$c$ctrlSkyMember$hdnSMCJson" type="hidden" id="ctl00_c_ctrlSkyMember_hdnSMCJson" disabled="disabled" value="{&quot;hdnIsSme&quot;:&quot;&quot;}" />
+<input name="ctl00$c$ctrlSkyMember$hdnTierDetails" type="hidden" id="ctl00_c_ctrlSkyMember_hdnTierDetails" disabled="disabled" />
+<div id="ctl00_c_ctrlSkyMember_dvSkyBRUser" class="fare-user-bar light-gray-bar book-brt-bar SME-Chk" style="display:none;">
+<div class="fare-custom-checkbox-holder">
+<div id="ctl00_c_ctrlSkyMember_dvSMCBRBook" class="fare-custom-checkbox click-to-check hidePaymentMetod">
+<input name="ctl00$c$ctrlSkyMember$chkSMCBRBook" type="checkbox" id="ctl00_c_ctrlSkyMember_chkSMCBRBook" data-access="checkbox-focus" onfocus="ClearFlag()" />
+</div>
+<label id="ctl00_c_ctrlSkyMember_lblBookBRT" class="click-to-check hidePaymentMetod" for="ctl00_c_ctrlSkyMember_chkSMCBRBook">
+Book Business Rewards travel</label>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</div>
+<div id="ctl00_c_ctrlSkyMember_dvBRDisabled" class="fare-user-bar light-gray-bar book-brt-bar" style="display: none">
+<div class="fare-custom-disabled-message">
+You can't create a Business Rewards booking when booking family travel.
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</div>
+<div id="ctl00_c_ctrlSkyMember_dvSMCFGBook" class="fare-user-bar light-gray-bar book-brt-bar " style="display: none">
+<div class="fare-custom-checkbox-holder">
+<div id="ctl00_c_ctrlSkyMember_dvSkyFamilyGroup" class="fare-custom-checkbox click-to-check hidePaymentMetod">
+<input name="ctl00$c$ctrlSkyMember$chkSMCFGBook" type="checkbox" id="ctl00_c_ctrlSkyMember_chkSMCFGBook" data-access="checkbox-focus" onfocus="ClearFlag()" />
+</div>
+
+<label for="ctl00_c_ctrlSkyMember_chkSMCFGBook" id="ctl00_c_ctrlSkyMember_lblBookFGT" class="">Book My Family Travel</label>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</div>
+<div id="ctl00_c_ctrlSkyMember_dvFGDisabled" class="fare-user-bar light-gray-bar book-brt-bar" style="display: none">
+<div class="fare-custom-disabled-message">
+You can't create a My Family booking when booking business travel.
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</div>
+<div id="ctl00_c_ctrlSkyMember_dvSkyBRAdmin" class="fare-user-bar light-gray-bar book-brt-bar SME-Link" style="display: none">
+<a id="ctl00_c_ctrlSkyMember_lnkBookBRTravel" class="book-brt-btn" href="javascript:__doPostBack(&#39;ctl00$c$ctrlSkyMember$lnkBookBRTravel&#39;,&#39;&#39;)">Book Business Rewards travel</a>
+</div>
+</div>
+<!--BRSR added to store value when navigated from new booking on BR Dashboard-->
+<input name="ctl00$c$ctrlSkyMember$hdnISBR" type="hidden" id="ctl00_c_ctrlSkyMember_hdnISBR" class="hdn-isBR" />
+
+
+
+
+
+
+
+<div class="ts-payment">
+<input name="ctl00$c$ctrlPayMethods$hdnIsCUGORedmptionType" type="hidden" id="hdnIsCUGORedmptionType" value="N" />
+<input name="ctl00$c$ctrlPayMethods$hdnPaymtMthdSystemErr" type="hidden" id="hdnPaymtMthdSystemErr" disabled="disabled" />
+<input name="ctl00$c$ctrlPayMethods$hdnPaymtMthdErrVal" type="hidden" id="hdnPaymtMthdErrVal" disabled="disabled" />
+<input type="submit" name="ctl00$c$ctrlPayMethods$btnModifySearch" value="MSCurrency" onclick="$(&#39;.fareFamiliesLoader&#39;).show();" id="btnModifySearch" class="mod-search" style="display: none;" />
+<input type="submit" name="ctl00$c$ctrlPayMethods$btnModifySearchMiles" value="MSMiles" onclick="$(&#39;.fareFamiliesLoader&#39;).show();" id="btnModifySearchMiles" class="mod-search-miles" style="display: none;" />
+
+
+<script type="text/javascript" src="../js/page/commonControl.js?v=14122023" integrity="sha256-i7sYIO+BxwgGX7Tum5HrrCod6Y0cTFzAJTpHSBaT/H4= sha384-iK7pZh9tDiGFX8LMm7J7kkW6i36QJKLvKVbWqPWDstbhz6YHpK8516HZagIqVc3W sha512-3wDqlkpuUmYL6GkyS9aB7K2dpT5517yo4giviMXg0NRP33TcAI4OzpPC1YShDSNGv1uVquGmcF2rAPWaCeHJlg==" crossorigin="anonymous"></script>
+<!-- BRSR CHANGES start-->
+<div id="ctl00_c_ctrlPayMethods_dvPaymentMethod" class="paymend-method-container pmu-adjust" style="display:none;">
+<div class="fare-radio-row bordered-row two-items-row pmu-tab-row">
+<!-- BRSR CHANGES END -->
+<fieldset>
+<legend class="label-hidden">
+Choose to book flights or redeem flights <!-- BRSR CHANGES  -->
+</legend>
+<!--remove role tab for accessibility-->
+<div id="dvPoCurrency" class="fare-custom-radio tab-focused first-elem active" aria-selected="false" data-access="tabs"><!-- BRSR CHANGES-->
+<label for="ctl00_c_ctrlPayMethods_rbPMCurrency" class="first-label cpm-align"><span>
+Book flights</span></label><!-- BRSR CHANGES-->
+<input value="rbPMCurrency" name="ctl00$c$ctrlPayMethods$radioPaymentType" type="radio" id="ctl00_c_ctrlPayMethods_rbPMCurrency" checked="checked" onclick="bookFlightHandler();" onchange="SetStatus(false)" onfocus="SetDefaultChecked(false)" />
+</div>
+<!--accessibility fix remove role tab-->
+<div id="dvPoMiles" class="fare-custom-radio miles tab-focused last-elem" aria-selected="false" data-access="tabs"><!-- BRSR CHANGES-->
+<label for="ctl00_c_ctrlPayMethods_rbPMMiles" class="last-label cpm-align">
+<!-- BRSR CHANGES start-->
+<span id="ctl00_c_ctrlPayMethods_lblMiles" class="lbl-Miles"> Book Classic Rewards Flight</span>
+<span id="ctl00_c_ctrlPayMethods_lblPoints" class="lbl-Points" style="display: none;"> Book Dynamic Rewards flights</span>
+</label>
+<!-- BRSR CHANGES end-->
+<!--accessibility fix-->
+<input value="rbPMMiles" name="ctl00$c$ctrlPayMethods$radioPaymentType" type="radio" id="ctl00_c_ctrlPayMethods_rbPMMiles" onchange="SetStatus(true)" onfocus="SetDefaultChecked(true)" />
+</div>
+<!-- BRSR CHANGES START [Payment method display changes + new login teaser, BRSR-497 / BRSR-498] (added 'clearfix' and 'pmu-tab-row-sub-desc' section) -->
+<div class="clearFix"></div>
+<div id="ctl00_c_ctrlPayMethods_dvPaymentToggleText" class="pmu-tab-row-sub-desc" style="display:block;">
+
+<div id="dvPoCurrency-sub-desc-wrapper" class="pmu-tab-row-sub-desc-section" style="max-width: 49%">
+
+<span class="skywards-cash-icon-src" style="display: none">
+/media/new_miles_tcm209-154769.png
+</span>
+<span class="skywards-cash-icon-AlternateText" style="display: none">
+Cash+Miles
+</span>
+
+<p>
+ 
+<img id="cash_miles_icon" class="cash_miles_icon_img" style="display:none;" />
+<span id="ctl00_c_ctrlPayMethods_cashMileToggle" class="pmu-tab-row-sub-desc-section-text" aria-hidden="true">
+Use Cash+Miles whilst paying for your booking and reduce the cost.
+</span>
+
+<span id="ctl00_c_ctrlPayMethods_cashPointToggle" style="display:none" class="pmu-tab-row-sub-desc-section-text">
+
+</span>
+</p>
+
+</div>
+
+<div id="dvPoMiles-sub-desc-wrapper" class="pmu-tab-row-sub-desc-section">
+
+<p>
+<img id="redeemIconToggle" style="display:none;margin-left:5px;" />
+
+<span id="ctl00_c_ctrlPayMethods_mileToggle" class="pmu-tab-row-sub-desc-section-text mile-toggle" aria-hidden="true">
+Redeem Skywards Miles for Classic Rewards.
+</span>
+
+<span id="ctl00_c_ctrlPayMethods_pointToggle" style="display:none" class="pmu-tab-row-sub-desc-section-text point-toggle">
+
+</span>
+</p>
+
+</div>
+
+</div>
+<!-- BRSR CHANGES END [Payment method display changes + new login teaser, BRSR-497 / BRSR-498] -->
+</fieldset>
+</div>
+<h2 class="pmu-airline-header" style="display: none;"><cufon class="cufon cufon-canvas" alt="Airline" style="width: 52px; height: 21px;"><canvas width="71" height="25" style="width: 71px; height: 25px; top: -3px; left: -2px;"></canvas>
+<cufontext>Airline</cufontext></cufon></h2> <!-- BRSR CHANGES -->
+<div id="ctl00_c_ctrlPayMethods_dvMilesContainer" style="display: none;" class="search-radio-buttons-row fare-radio-row two-items-row pmu-bordered-row" data-visibility="true"><!-- BRSR CHANGES -->
+<fieldset>
+<legend class="label-hidden">
+Choose option: Emirates flight only or Partner airlines only.
+</legend>
+<div id="dvPoEKMiles" class="fare-custom-radio active tab-focused ek-miles"><!--BRSR::Dynamic Points added classname-->
+<label for="ctl00_c_ctrlPayMethods_rbPMEK"><span>
+Search Emirates flights only</span></label>
+<input value="rbPMEK" name="ctl00$c$ctrlPayMethods$radioFlightType" type="radio" id="ctl00_c_ctrlPayMethods_rbPMEK" checked="checked" />
+</div>
+<div id="dvPoPartnerMiles" class="fare-custom-radio tab-focused partner-miles"><!--BRSR::Dynamic Points added classname-->
+<label for="ctl00_c_ctrlPayMethods_rbPMPartner"><span>
+Search partner flights only</span></label>
+<input value="rbPMPartner" name="ctl00$c$ctrlPayMethods$radioFlightType" type="radio" id="ctl00_c_ctrlPayMethods_rbPMPartner" />
+</div>
+</fieldset>
+</div>
+</div>
+<span class="spnshowcontrols sr-only visually-hidden" aria-hidden="true">
+Additional options showing.
+</span>
+<!--accessibility fix-->
+<span id="spnStatusChecked" aria-live="polite" class="visually-hidden"></span>
+<input name="ctl00$c$ctrlPayMethods$hdnIsMiles" type="hidden" id="ctl00_c_ctrlPayMethods_hdnIsMiles" class="is-miles" value="N" />
+<input name="ctl00$c$ctrlPayMethods$hdnISPartner" type="hidden" id="ctl00_c_ctrlPayMethods_hdnISPartner" class="is-partner-miles" value="N" />
+<input type="hidden" name="ctl00$c$ctrlPayMethods$hdnMilesCugoRedeem" id="hdnMilesCugoRedeem" value="N" />
+<div id="ctl00_c_ctrlPayMethods_dvSkySurferHolder">
+</div>
+</div>
+
+<div id="dvRedirect" class="greenMessage" style="display: none">
+<span id="lblRedirectWarning"><br /></span>
+</div>
+<div id="ctl00_c_divILNotification" class="ts-message-container" style="display:none;">
+<div class="ts-warning-message">
+<p>
+<i class="icon icon-information"></i>
+Using flight search lets you book flights departing only from local airports in the country website you are on. Please use other country websites if you wish to book other routes.
+</p>
+</div>
+</div>
+<div id="ctl00_c_pnlWNW" class="where-and-when-container">
+	
+<h2 id="ctl00_c_CtWNW_ltWNW">
+Where and when</h2>
+<input type="hidden" name="ctl00$c$CtWNW$hdnTxtField" id="ctl00_c_CtWNW_hdnTxtField" value="dd MMM yy" />
+<input type="hidden" name="ctl00$c$CtWNW$hdnCultureInfo" id="ctl00_c_CtWNW_hdnCultureInfo" value="en-GB" />
+<input type="hidden" name="ctl00$c$CtWNW$hdnIndicator" id="ctl00_c_CtWNW_hdnIndicator" />
+<input type="hidden" name="ctl00$c$CtWNW$POSCountry" id="ctl00_c_CtWNW_POSCountry" />
+<div class="fare-radio-row bordered-row three-items-row">
+<fieldset>
+<legend class="label-hidden">
+Choose return flight, one way flight or advanced search for multiple destinations, stopovers, promotional codes or partner airlines</legend>
+<div data-radio="RT_OW" id="Div1" class="fare-custom-radio tab-focused active" aria-selected="true" aria-controls="RT_OW">
+<label class="first-label" for="returnSearch">
+<span id="ctl00_c_CtWNW_ltReturn">Return</span></label>
+<input value="returnSearch" name="ctl00$c$CtWNW$tripType" type="radio" id="returnSearch" onchange="SetTabValue(1)" />
+</div>
+<div data-radio="RT_OW" id="dvRadioOneway" class="fare-custom-radio tab-focused" aria-controls="RT_OW">
+<label class="middle-label" for="ctl00_c_CtWNW_onewaySearch">
+<span id="ctl00_c_CtWNW_ltOneway">One way</span></label>
+<input value="onewaySearch" name="ctl00$c$CtWNW$tripType" type="radio" id="ctl00_c_CtWNW_onewaySearch" class="onewaySearchRadio" checked="checked" onchange="SetTabValue(2)" />
+</div>
+<div data-radio="MULTI" id="dvRadioMulti" class="fare-custom-radio tab-focused" aria-controls="MULTI">
+<label class="last-label" for="ctl00_c_CtWNW_multipleSearch">
+<span id="ctl00_c_CtWNW_ltMultiDest">Advanced search</span></label>
+<input value="multipleSearch" name="ctl00$c$CtWNW$tripType" type="radio" id="ctl00_c_CtWNW_multipleSearch" class="multiSearchRadio" />
+</div>
+</fieldset>
+</div>
+<div id="RT_OW" class="tabContent">
+<div id="ctl00_c_CtWNW_tddFrom" class="fare-inputs-row three-width-items" style="display: table">
+
+<div class="input-holder">
+<fieldset>
+<legend class="label-hidden">
+Choose your airport</legend>
+<div class="fare-inputs-row" id="dvFrom">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlFrom">
+Departure airport</label>
+<select name="ctl00$c$CtWNW$ddlFrom" id="ctl00_c_CtWNW_ddlFrom" onchange="IsEkOperated(&#39;&#39;);">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlFrom_Option_Text" id="ctl00_c_CtWNW_ddlFrom_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr30 asterisk" />
+</div>
+<div class="fare-inputs-row m-none" id="dvTo">
+<label class="return-icon label-hidden-text" for="ctl00_c_CtWNW_ddlTo">
+Arrival airport</label>
+<select name="ctl00$c$CtWNW$ddlTo" id="ctl00_c_CtWNW_ddlTo" onchange="IsEkOperated(this.value);return false;">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlTo_Option_Text" id="ctl00_c_CtWNW_ddlTo_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr30 asterisk" />
+</div>
+</fieldset>
+</div>
+
+<div class="input-holder">
+<fieldset>
+<legend class="label-hidden">
+<span id="lb_WhenWhere_DEPCAL">Choose your departure and return dates</span></legend>
+<div id="ctl00_c_CtWNW_dvDepartDate" class="fare-inputs-row" onclick="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].txtDepartDate, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].txtarrivaldate, 0); }">
+<label class="calendar-icon label-hidden-text" for="txtDepartDate">
+Please choose your <span class="departure">departure</span> date</label>
+<input name="ctl00$c$CtWNW$txtDepartDate" type="text" value="04 Mar 24" id="txtDepartDate" class="blue-outline with-icon fare-datepicker-from hasDatepicker" placeholder="Departing" size="11" aria-required="true" onfocus="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].txtDepartDate, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].txtarrivaldate, 0); }" data-calendar="true" onBlur="closeCalendar();" data-message-how-to-use="Departure date, Use Page Up key to select the next month and Page Down key to select the previous month." />
+<span href="#" class="inputSelectedDate visually-hidden" tabindex="-1"></span>
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr30 asterisk" />
+</div>
+<div id="dvReturnDate" class="fare-inputs-row m-none" onclick="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].txtarrivaldate, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].txtDepartDate); }">
+<label class="calendar-icon label-hidden-text" for="txtarrivaldate">
+Please choose your <span class="return">return</span> date</label>
+<input name="ctl00$c$CtWNW$txtarrivaldate" type="text" id="txtarrivaldate" class="blue-outline with-icon fare-datepicker-to hasDatepicker" size="11" placeholder="Returning" aria-required="true" onfocus="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].txtarrivaldate, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].txtDepartDate); }" data-calendar="true" onBlur="closeCalendar();" data-message-how-to-use="Return date, Use Page Up key to select the next month and Page Down key to select the previous month." />
+<span href="#" class="inputSelectedDate visually-hidden" tabindex="-1"></span>
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr30 asterisk" />
+</div>
+</fieldset>
+</div>
+
+<div class="fare-custom-select fr-custom-select-container">
+<fieldset>
+<legend class="label-hidden">
+Choose your cabin class</legend>
+<div class="fare-inputs-row">
+<label for="ctl00_c_CtWNW_flightClass" class="label-hidden">
+Class</label>
+<select name="ctl00$c$CtWNW$flightClass" id="ctl00_c_CtWNW_flightClass" class="first-open colored-cabin-class" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" data-no-results-found-text="No results found" data-access-message-chosen="Selected: [VAL]" onchange="fnRedeemInfantCheck();IsClassToggle();fncabinClassChk();ShowBestPriceCountry(&#39;ctl00_c_CtWNW_ddlFrom&#39;, &#39;ctl00_c_CtWNW_flightClass&#39;)" data-access-title="Select your preferred cabin class for your outbound flight." data-chosen-select="true" data-access="select-chosen" data-start-typing-text="Please enter a value to get results." data-results-found-text="[VAL] results found">
+		<option value="0">Economy Class</option>
+		<option value="7">Premium Economy</option>
+		<option value="1">Business Class</option>
+		<option value="2">First Class</option>
+
+	</select>
+</div>
+<div class="fare-inputs-row m-none restrict-first-ond" id="dvReturnClass">
+<label for="ctl00_c_CtWNW_flightClass1" class="label-hidden">
+Class</label>
+<select name="ctl00$c$CtWNW$flightClass1" id="ctl00_c_CtWNW_flightClass1" class="first-open colored-cabin-class" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" data-no-results-found-text="No results found" data-access-message-chosen="Selected: [VAL]" onchange="fnRedeemInfantCheck();IsClassToggle();fncabinClassChk();" data-access-title="Select your preferred cabin class for your inbound flight." data-chosen-select="true" data-access="select-chosen" data-start-typing-text="Please enter a value to get results." data-results-found-text="[VAL] results found">
+		<option value="0">Economy Class</option>
+		<option value="7">Premium Economy</option>
+		<option value="1">Business Class</option>
+		<option value="2">First Class</option>
+
+	</select>
+</div>
+</fieldset>
+</div>
+</div>
+
+
+<div id="ctl00_c_CtWNW_dFlex">
+<div class="flex-check-container fare-custom-checkbox-holder" id="dvFlex">
+<div class="fare-custom-checkbox click-to-check">
+<input name="ctl00$c$CtWNW$chkFlexSearch" type="checkbox" id="chkFlexSearch" data-access="checkbox-focus" onfocus="$(&#39;.tt-menu&#39;).hide()" checked="checked" />
+</div>
+<span class="click-to-check label" id="flexDateLabel" aria-hidden="true">
+My dates are flexible (+/- 3 days)</span>
+<label class="label-hidden" for="chkFlexSearch" id="lblFlexSearch">
+Select this option if your dates are flexible plus or minus 3 days.</label>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</div>
+
+
+</div>
+<div id="MULTI" class="tabContent" style="display: none;">
+<fieldset>
+<legend class="label-hidden">
+Sector number 1</legend>
+<div class="fare-inputs-row four-width-items" id="divMultiSearch1" searchleg="1">
+<div class="input-holder" id="dvFrom1">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlFrom1">
+Departure airport</label>
+<select name="ctl00$c$CtWNW$ddlFrom1" id="ctl00_c_CtWNW_ddlFrom1">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlFrom1_Option_Text" id="ctl00_c_CtWNW_ddlFrom1_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="input-holder" id="dvTo1">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlTo1">
+Arrival airport</label>
+<select name="ctl00$c$CtWNW$ddlTo1" id="ctl00_c_CtWNW_ddlTo1">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlTo1_Option_Text" id="ctl00_c_CtWNW_ddlTo1_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div id="ctl00_c_CtWNW_dvD1" class="input-holder" onclick="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD1, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].txtDepartDate); }">
+<label for="ctl00_c_CtWNW_txtD1" class="calendar-icon label-hidden-text">
+Please choose your <span class="departure">departure</span> date</label>
+<input name="ctl00$c$CtWNW$txtD1" type="text" id="ctl00_c_CtWNW_txtD1" placeholder="Departing" class="blue-outline with-icon fare-datepicker-to hasDatepicker autoPlaceholder" onfocus="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD1, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].txtDepartDate); }" data-calendar="true" onBlur="closeCalendar();" data-message-how-to-use="Departure date, Use Page Up key to select the next month and Page Down key to select the previous month." />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="fare-custom-select fr-custom-select-container">
+<label for="ctl00_c_CtWNW_ddlClass1" class="label-hidden">
+Class</label>
+<select name="ctl00$c$CtWNW$ddlClass1" id="ctl00_c_CtWNW_ddlClass1" class="first-open colored-cabin-class" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" data-no-results-found-text="No results found" data-access-message-chosen="Selected: [VAL]" onchange="fnRedeemInfantCheck();ChekMultiSearch();" data-access-title="Select your preferred cabin class for your outbound flight." data-chosen-select="true" data-access="select-chosen" data-start-typing-text="Please enter a value to get results." data-results-found-text="[VAL] results found">
+		<option value="0">Economy Class</option>
+		<option value="7">Premium Economy</option>
+		<option value="1">Business Class</option>
+		<option value="2">First Class</option>
+
+	</select>
+</div>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</fieldset>
+<fieldset>
+<legend class="label-hidden">
+Sector number 2</legend>
+<div class="fare-inputs-row four-width-items" id="divMultiSearch2" searchleg="2">
+<div class="input-holder" id="dvFrom2">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlFrom2">
+Departure airport</label>
+<select name="ctl00$c$CtWNW$ddlFrom2" id="ctl00_c_CtWNW_ddlFrom2">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlFrom2_Option_Text" id="ctl00_c_CtWNW_ddlFrom2_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="input-holder" id="dvTo2">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlTo2">
+Arrival airport</label>
+<select name="ctl00$c$CtWNW$ddlTo2" id="ctl00_c_CtWNW_ddlTo2">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlTo2_Option_Text" id="ctl00_c_CtWNW_ddlTo2_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div id="ctl00_c_CtWNW_dvD2" class="input-holder" onclick="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD2, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD1); }">
+<label for="ctl00_c_CtWNW_txtD2" class="calendar-icon label-hidden-text">
+Please choose your <span class="onward">onward</span> date</label>
+<input name="ctl00$c$CtWNW$txtD2" type="text" id="ctl00_c_CtWNW_txtD2" placeholder="Departing" class="blue-outline with-icon fare-datepicker-to hasDatepicker autoPlaceholder" onfocus="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD2, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD1); }" data-calendar="true" onBlur="closeCalendar();" data-message-how-to-use="Departure date, Use Page Up key to select the next month and Page Down key to select the previous month." />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="fare-custom-select fr-custom-select-container restrict-first-ond">
+<label for="ctl00_c_CtWNW_ddlClass2" class="label-hidden">
+Class</label>
+<select name="ctl00$c$CtWNW$ddlClass2" id="ctl00_c_CtWNW_ddlClass2" class="first-open colored-cabin-class" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" data-no-results-found-text="No results found" data-access-message-chosen="Selected: [VAL]" onchange="fnRedeemInfantCheck();ChekMultiSearch();" data-access-title="Select your preferred cabin class for your onward flight." data-chosen-select="true" data-access="select-chosen" data-start-typing-text="Please enter a value to get results." data-results-found-text="[VAL] results found">
+		<option value="0">Economy Class</option>
+		<option value="7">Premium Economy</option>
+		<option value="1">Business Class</option>
+		<option value="2">First Class</option>
+
+	</select>
+</div>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</fieldset>
+<fieldset class="hidden-row">
+<legend class="label-hidden" aria-hidden="true">
+Sector number 3</legend>
+<div class="fare-inputs-row four-width-items hidden-row" id="divMultiSearch3" searchleg="3">
+<div class="input-holder" id="dvFrom3">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlFrom3">
+Departure airport</label>
+<select name="ctl00$c$CtWNW$ddlFrom3" id="ctl00_c_CtWNW_ddlFrom3">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlFrom3_Option_Text" id="ctl00_c_CtWNW_ddlFrom3_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="input-holder" id="dvTo3">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlTo3">
+Arrival airport</label>
+<select name="ctl00$c$CtWNW$ddlTo3" id="ctl00_c_CtWNW_ddlTo3">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlTo3_Option_Text" id="ctl00_c_CtWNW_ddlTo3_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div id="ctl00_c_CtWNW_dvD3" class="input-holder" onclick="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD3, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD2); }">
+<label for="ctl00_c_CtWNW_txtD3" class="calendar-icon label-hidden-text">
+Please choose your <span class="onward">onward</span> date</label>
+<input name="ctl00$c$CtWNW$txtD3" type="text" id="ctl00_c_CtWNW_txtD3" placeholder="Departing" class="blue-outline with-icon fare-datepicker-to hasDatepicker autoPlaceholder" onfocus="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD3, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD2); }" data-calendar="true" onBlur="closeCalendar();" data-message-how-to-use="Departure date, Use Page Up key to select the next month and Page Down key to select the previous month." />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="fare-custom-select fr-custom-select-container restrict-first-ond">
+<label for="ctl00_c_CtWNW_ddlClass3" class="label-hidden">
+Class</label>
+<select name="ctl00$c$CtWNW$ddlClass3" id="ctl00_c_CtWNW_ddlClass3" class="first-open colored-cabin-class" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" data-no-results-found-text="No results found" data-access-message-chosen="Selected: [VAL]" onchange="fnRedeemInfantCheck();ChekMultiSearch();" data-access-title="Select your preferred cabin class for your onward flight." data-chosen-select="true" data-access="select-chosen" data-start-typing-text="Please enter a value to get results." data-results-found-text="[VAL] results found">
+		<option value="0">Economy Class</option>
+		<option value="7">Premium Economy</option>
+		<option value="1">Business Class</option>
+		<option value="2">First Class</option>
+
+	</select>
+</div>
+<a class="fare-hide-row-btn" aria-label="Remove sector number: 3" href="#"></a>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</fieldset>
+<fieldset class="hidden-row">
+<legend class="label-hidden"  aria-hidden="true">
+Sector number 4</legend>
+<div class="fare-inputs-row four-width-items hidden-row" id="divMultiSearch4" searchleg="4">
+<div class="input-holder" id="dvFrom4">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlFrom4">
+Departure airport</label>
+<select name="ctl00$c$CtWNW$ddlFrom4" id="ctl00_c_CtWNW_ddlFrom4">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlFrom4_Option_Text" id="ctl00_c_CtWNW_ddlFrom4_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="input-holder" id="dvTo4">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlTo4">
+Arrival airport</label>
+<select name="ctl00$c$CtWNW$ddlTo4" id="ctl00_c_CtWNW_ddlTo4">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlTo4_Option_Text" id="ctl00_c_CtWNW_ddlTo4_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div id="ctl00_c_CtWNW_dvD4" class="input-holder" onclick="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD4, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD3); }">
+<label for="ctl00_c_CtWNW_txtD4" class="calendar-icon label-hidden-text">
+Please choose your <span class="onward">onward</span> date</label>
+<input name="ctl00$c$CtWNW$txtD4" type="text" id="ctl00_c_CtWNW_txtD4" placeholder="Departing" class="blue-outline with-icon fare-datepicker-to hasDatepicker autoPlaceholder" onfocus="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD4, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD3); }" data-calendar="true" onBlur="closeCalendar();" data-message-how-to-use="Departure date, Use Page Up key to select the next month and Page Down key to select the previous month." />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="fare-custom-select fr-custom-select-container restrict-first-ond">
+<label for="ctl00_c_CtWNW_ddlClass4" class="label-hidden">
+Class</label>
+<select name="ctl00$c$CtWNW$ddlClass4" id="ctl00_c_CtWNW_ddlClass4" class="first-open colored-cabin-class" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" data-no-results-found-text="No results found" data-access-message-chosen="Selected: [VAL]" onchange="fnRedeemInfantCheck();ChekMultiSearch();" data-access-title="Select your preferred cabin class for your onward flight." data-chosen-select="true" data-access="select-chosen" data-start-typing-text="Please enter a value to get results." data-results-found-text="[VAL] results found">
+		<option value="0">Economy Class</option>
+		<option value="7">Premium Economy</option>
+		<option value="1">Business Class</option>
+		<option value="2">First Class</option>
+
+	</select>
+</div>
+<a class="fare-hide-row-btn" aria-label="Remove sector number: 4" href="#"></a>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</fieldset>
+<fieldset class="hidden-row">
+<legend class="label-hidden" aria-hidden="true">
+Sector number 5</legend>
+<div class="fare-inputs-row four-width-items hidden-row" id="divMultiSearch5" searchleg="5">
+<div class="input-holder" id="dvFrom5">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlFrom5">
+Departure airport</label>
+<select name="ctl00$c$CtWNW$ddlFrom5" id="ctl00_c_CtWNW_ddlFrom5">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlFrom5_Option_Text" id="ctl00_c_CtWNW_ddlFrom5_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="input-holder" id="dvTo5">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlTo5">
+Arrival airport</label>
+<select name="ctl00$c$CtWNW$ddlTo5" id="ctl00_c_CtWNW_ddlTo5">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlTo5_Option_Text" id="ctl00_c_CtWNW_ddlTo5_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div id="ctl00_c_CtWNW_dvD5" class="input-holder" onclick="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD5, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD4); }">
+<label for="ctl00_c_CtWNW_txtD5" class="calendar-icon label-hidden-text">
+Please choose your <span class="onward">onward</span> date</label>
+<input name="ctl00$c$CtWNW$txtD5" type="text" id="ctl00_c_CtWNW_txtD5" placeholder="Departing" class="blue-outline with-icon fare-datepicker-to hasDatepicker autoPlaceholder" onfocus="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD5, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD4); }" data-calendar="true" onBlur="closeCalendar();" data-message-how-to-use="Departure date, Use Page Up key to select the next month and Page Down key to select the previous month." />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="fare-custom-select fr-custom-select-container restrict-first-ond">
+<label for="ctl00_c_CtWNW_ddlClass5" class="label-hidden">
+Class</label>
+<select name="ctl00$c$CtWNW$ddlClass5" id="ctl00_c_CtWNW_ddlClass5" class="first-open colored-cabin-class" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" data-no-results-found-text="No results found" data-access-message-chosen="Selected: [VAL]" onchange="fnRedeemInfantCheck();ChekMultiSearch();" data-access-title="Select your preferred cabin class for your onward flight." data-chosen-select="true" data-access="select-chosen" data-start-typing-text="Please enter a value to get results." data-results-found-text="[VAL] results found">
+		<option value="0">Economy Class</option>
+		<option value="7">Premium Economy</option>
+		<option value="1">Business Class</option>
+		<option value="2">First Class</option>
+
+	</select>
+</div>
+<a class="fare-hide-row-btn" aria-label="Remove sector number: 5" href="#"></a>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</fieldset>
+<fieldset class="hidden-row">
+<legend class="label-hidden" aria-hidden="true">
+Sector number 6</legend>
+<div class="fare-inputs-row four-width-items hidden-row" id="divMultiSearch6" searchleg="6">
+<div class="input-holder" id="dvFrom6">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlFrom6">
+Departure airport</label>
+<select name="ctl00$c$CtWNW$ddlFrom6" id="ctl00_c_CtWNW_ddlFrom6">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlFrom6_Option_Text" id="ctl00_c_CtWNW_ddlFrom6_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="input-holder" id="dvTo6">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlTo6">
+Arrival airport</label>
+<select name="ctl00$c$CtWNW$ddlTo6" id="ctl00_c_CtWNW_ddlTo6">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlTo6_Option_Text" id="ctl00_c_CtWNW_ddlTo6_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div id="ctl00_c_CtWNW_dvD6" class="input-holder" onclick="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD6, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD5); }">
+<label for="ctl00_c_CtWNW_txtD6" class="calendar-icon label-hidden-text">
+Please choose your <span class="onward">onward</span> date</label>
+<input name="ctl00$c$CtWNW$txtD6" type="text" id="ctl00_c_CtWNW_txtD6" placeholder="Departing" class="blue-outline with-icon fare-datepicker-to hasDatepicker autoPlaceholder" onfocus="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD6, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD5); }" data-calendar="true" onBlur="closeCalendar();" data-message-how-to-use="Departure date, Use Page Up key to select the next month and Page Down key to select the previous month." />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="fare-custom-select fr-custom-select-container restrict-first-ond">
+<label for="ctl00_c_CtWNW_ddlClass6" class="label-hidden">
+Class</label>
+<select name="ctl00$c$CtWNW$ddlClass6" id="ctl00_c_CtWNW_ddlClass6" class="first-open colored-cabin-class" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" data-no-results-found-text="No results found" data-access-message-chosen="Selected: [VAL]" onchange="fnRedeemInfantCheck();ChekMultiSearch();" data-access-title="Select your preferred cabin class for your onward flight." data-chosen-select="true" data-access="select-chosen" data-start-typing-text="Please enter a value to get results." data-results-found-text="[VAL] results found">
+		<option value="0">Economy Class</option>
+		<option value="7">Premium Economy</option>
+		<option value="1">Business Class</option>
+		<option value="2">First Class</option>
+
+	</select>
+</div>
+<a class="fare-hide-row-btn" aria-label="Remove sector number: 6" href="#"></a>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</fieldset>
+<fieldset class="hidden-row">
+<legend class="label-hidden" aria-hidden="true">
+Sector number 7</legend>
+<div class="fare-inputs-row four-width-items hidden-row" id="divMultiSearch7" searchleg="7">
+<div class="input-holder" id="dvFrom7">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlFrom7">
+Departure airport</label>
+<select name="ctl00$c$CtWNW$ddlFrom7" id="ctl00_c_CtWNW_ddlFrom7">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlFrom7_Option_Text" id="ctl00_c_CtWNW_ddlFrom7_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="input-holder" id="dvTo7">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlTo7">
+Arrival airport</label>
+<select name="ctl00$c$CtWNW$ddlTo7" id="ctl00_c_CtWNW_ddlTo7">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlTo7_Option_Text" id="ctl00_c_CtWNW_ddlTo7_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div id="ctl00_c_CtWNW_dvD7" class="input-holder" onclick="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD7, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD6); }">
+<label for="ctl00_c_CtWNW_txtD7" class="calendar-icon label-hidden-text">
+Please choose your <span class="onward">onward</span> date</label>
+<input name="ctl00$c$CtWNW$txtD7" type="text" id="ctl00_c_CtWNW_txtD7" placeholder="Departing" class="blue-outline with-icon fare-datepicker-to hasDatepicker autoPlaceholder" onfocus="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD7, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD6); }" data-calendar="true" onBlur="closeCalendar();" data-message-how-to-use="Departure date, Use Page Up key to select the next month and Page Down key to select the previous month." />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="fare-custom-select fr-custom-select-container restrict-first-ond">
+<label for="ctl00_c_CtWNW_ddlClass7" class="label-hidden">
+Class</label>
+<select name="ctl00$c$CtWNW$ddlClass7" id="ctl00_c_CtWNW_ddlClass7" class="first-open colored-cabin-class" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" data-no-results-found-text="No results found" data-access-message-chosen="Selected: [VAL]" onchange="fnRedeemInfantCheck();ChekMultiSearch();" data-access-title="Select your preferred cabin class for your onward flight." data-chosen-select="true" data-access="select-chosen" data-start-typing-text="Please enter a value to get results." data-results-found-text="[VAL] results found">
+		<option value="0">Economy Class</option>
+		<option value="7">Premium Economy</option>
+		<option value="1">Business Class</option>
+		<option value="2">First Class</option>
+
+	</select>
+</div>
+<a class="fare-hide-row-btn" aria-label="Remove sector number: 7" href="#"></a>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</fieldset>
+<fieldset class="hidden-row">
+<legend class="label-hidden" aria-hidden="true">
+Sector number 8</legend>
+<div class="fare-inputs-row four-width-items hidden-row" id="divMultiSearch8" searchleg="8">
+<div class="input-holder" id="dvFrom8">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlFrom8">
+Departure airport</label>
+<select name="ctl00$c$CtWNW$ddlFrom8" id="ctl00_c_CtWNW_ddlFrom8">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlFrom8_Option_Text" id="ctl00_c_CtWNW_ddlFrom8_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="input-holder" id="dvTo8">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlTo8">
+Arrival airport</label>
+<select name="ctl00$c$CtWNW$ddlTo8" id="ctl00_c_CtWNW_ddlTo8">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlTo8_Option_Text" id="ctl00_c_CtWNW_ddlTo8_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div id="ctl00_c_CtWNW_dvD8" class="input-holder" onclick="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD8, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD7); }">
+<label for="ctl00_c_CtWNW_txtD8" class="calendar-icon label-hidden-text">
+Please choose your <span class="onward">onward</span> date</label>
+<input name="ctl00$c$CtWNW$txtD8" type="text" id="ctl00_c_CtWNW_txtD8" placeholder="Departing" class="blue-outline with-icon fare-datepicker-to hasDatepicker autoPlaceholder" onfocus="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD8, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD7); }" data-calendar="true" onBlur="closeCalendar();" data-message-how-to-use="Departure date, Use Page Up key to select the next month and Page Down key to select the previous month." />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="fare-custom-select fr-custom-select-container restrict-first-ond">
+<label for="ctl00_c_CtWNW_ddlClass8" class="label-hidden">
+Class</label>
+<select name="ctl00$c$CtWNW$ddlClass8" id="ctl00_c_CtWNW_ddlClass8" class="first-open colored-cabin-class" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" data-no-results-found-text="No results found" data-access-message-chosen="Selected: [VAL]" onchange="fnRedeemInfantCheck();ChekMultiSearch();" data-access-title="Select your preferred cabin class for your onward flight." data-chosen-select="true" data-access="select-chosen" data-start-typing-text="Please enter a value to get results." data-results-found-text="[VAL] results found">
+		<option value="0">Economy Class</option>
+		<option value="7">Premium Economy</option>
+		<option value="1">Business Class</option>
+		<option value="2">First Class</option>
+
+	</select>
+</div>
+<a class="fare-hide-row-btn" aria-label="Remove sector number: 8" href="#"></a>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</fieldset>
+<fieldset class="hidden-row">
+<legend class="label-hidden" aria-hidden="true">
+Sector number 9</legend>
+<div class="fare-inputs-row four-width-items hidden-row" id="divMultiSearch9" searchleg="9">
+<div class="input-holder" id="dvFrom9">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlFrom9">
+Departure airport</label>
+<select name="ctl00$c$CtWNW$ddlFrom9" id="ctl00_c_CtWNW_ddlFrom9">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlFrom9_Option_Text" id="ctl00_c_CtWNW_ddlFrom9_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="input-holder" id="dvTo9">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlTo9">
+Arrival airport</label>
+<select name="ctl00$c$CtWNW$ddlTo9" id="ctl00_c_CtWNW_ddlTo9">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlTo9_Option_Text" id="ctl00_c_CtWNW_ddlTo9_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div id="ctl00_c_CtWNW_dvD9" class="input-holder" onclick="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD9, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD8); }">
+<label for="ctl00_c_CtWNW_txtD9" class="calendar-icon label-hidden-text">
+Please choose your <span class="onward">onward</span> date</label>
+<input name="ctl00$c$CtWNW$txtD9" type="text" id="ctl00_c_CtWNW_txtD9" placeholder="Departing" class="blue-outline with-icon fare-datepicker-to hasDatepicker autoPlaceholder" onfocus="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD9, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD8); }" data-calendar="true" onBlur="closeCalendar();" data-message-how-to-use="Departure date, Use Page Up key to select the next month and Page Down key to select the previous month." />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="fare-custom-select fr-custom-select-container restrict-first-ond">
+<label for="ctl00_c_CtWNW_ddlClass9" class="label-hidden">
+Class</label>
+<select name="ctl00$c$CtWNW$ddlClass9" id="ctl00_c_CtWNW_ddlClass9" class="first-open colored-cabin-class" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" data-no-results-found-text="No results found" data-access-message-chosen="Selected: [VAL]" onchange="fnRedeemInfantCheck();ChekMultiSearch();" data-access-title="Select your preferred cabin class for your onward flight." data-chosen-select="true" data-access="select-chosen" data-start-typing-text="Please enter a value to get results." data-results-found-text="[VAL] results found">
+		<option value="0">Economy Class</option>
+		<option value="7">Premium Economy</option>
+		<option value="1">Business Class</option>
+		<option value="2">First Class</option>
+
+	</select>
+</div>
+<a class="fare-hide-row-btn" aria-label="Remove sector number: 9" href="#"></a>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</fieldset>
+<fieldset class="hidden-row">
+<legend class="label-hidden" aria-hidden="true">
+Sector number 10</legend>
+<div class="fare-inputs-row four-width-items hidden-row" id="divMultiSearch10" searchleg="10">
+<div class="input-holder" id="dvFrom10">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlFrom10">
+Departure airport</label>
+<select name="ctl00$c$CtWNW$ddlFrom10" id="ctl00_c_CtWNW_ddlFrom10">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlFrom10_Option_Text" id="ctl00_c_CtWNW_ddlFrom10_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="input-holder" id="dvTo10">
+<label class="from-icon label-hidden-text" for="ctl00_c_CtWNW_ddlTo10">
+Arrival airport</label>
+<select name="ctl00$c$CtWNW$ddlTo10" id="ctl00_c_CtWNW_ddlTo10">
+
+	</select>
+<input type="hidden" value="{0} options found. Press up and down arrow to choose the airport and enter to select." name="ctl00_c_CtWNW_ddlTo10_Option_Text" id="ctl00_c_CtWNW_ddlTo10_Option_Text" />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div id="ctl00_c_CtWNW_dvD10" class="input-holder" onclick="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD10, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD9); }">
+<label for="ctl00_c_CtWNW_txtD10" class="calendar-icon label-hidden-text">
+Please choose your <span class="onward">onward</span> date</label>
+<input name="ctl00$c$CtWNW$txtD10" type="text" id="ctl00_c_CtWNW_txtD10" placeholder="Departing" class="blue-outline with-icon fare-datepicker-to hasDatepicker autoPlaceholder" onfocus="if (EKCalendar) { EKCalendar.display(document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD10, new Date(2024, 0, 11), new Date(2025, 0, 5), document.forms[&#39;aspnetForm&#39;].ctl00_c_CtWNW_txtD9); }" data-calendar="true" onBlur="closeCalendar();" data-message-how-to-use="Departure date, Use Page Up key to select the next month and Page Down key to select the previous month." />
+<img aria-hidden="true" alt="Required" style="float: right;" src="../Images/manage_account/payment_section/asterisk.png" class="pr10 asterisk" />
+</div>
+<div class="fare-custom-select fr-custom-select-container restrict-first-ond">
+<label for="ctl00_c_CtWNW_ddlClass10" class="label-hidden">
+Class</label>
+<select name="ctl00$c$CtWNW$ddlClass10" id="ctl00_c_CtWNW_ddlClass10" class="first-open colored-cabin-class" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" data-no-results-found-text="No results found" data-access-message-chosen="Selected: [VAL]" onchange="fnRedeemInfantCheck();ChekMultiSearch();" data-access-title="Select your preferred cabin class for your inbound flight." data-chosen-select="true" data-access="select-chosen" data-start-typing-text="Please enter a value to get results." data-results-found-text="[VAL] results found">
+		<option value="0">Economy Class</option>
+		<option value="7">Premium Economy</option>
+		<option value="1">Business Class</option>
+		<option value="2">First Class</option>
+
+	</select>
+</div>
+<a class="fare-hide-row-btn" aria-label="Remove sector number: 10" href="#"></a>
+<div class="clearfix" aria-hidden="true"></div>
+</div>
+</fieldset>
+<span class="visually-hidden" id="lastRowRemv" aria-hidden="true">
+Selected row removed</span>
+<div class="clearFix" aria-hidden="true"></div>
+<a id="ctl00_c_CtWNW_ltAddMoreCity" class="add-city-row-btn" caller="WhereNWhen" href="#">Add another city (up to 10)</a>
+</div>
+
+
+</div>
+
+<link href="../CSS/slider-jquery-ui.min.css?v=14122023" integrity="sha256-VtDbpZ0pykutN1y6ZMBDxbhr+GW8RQQ0Hjmn3IS6GJ8= sha384-m4Vtx4gkekLgDDCgTeo0BZjxjqNiHOGxbNw6sbEhMXLtsWiXtbbPS5pxggimyMjK sha512-rOTPWVNPZQOJ6Hx4nyULdNenbVXbkWrnvD5hsbZlyFC1wyXC9gLAugsnFY9zuP/gUX4LEXCRW4mj4ThsQaow+g==" crossorigin="anonymous" rel="stylesheet" />
+<script src="../js/jquery.simplyCountable_legacy.min.js?v=14122023" integrity="sha256-A68fqHcl6+ZBwee89m+SsWj9sVwOHUD7K2KOIvhCK3c= sha384-pB0SBblDs71cBwEhFBfS6sOF3r1Zp+x6wfUU0v0pZTOTGP0UIV6qCogz34uJHekh sha512-E8EoKtcS+MoetzV6dRM5weF9vH2o7pAvkeAaVireEmLdhmr9+sSrlasOYO3tB0F3UHGT6SjvuLhDIw1B3abdIA==" crossorigin="anonymous"></script>
+<script src="../js/validationCallout.min.js?v=14122023" integrity="sha256-pTwwzaV7PUysk9zP1wIH58oi8YrgE75DQJjHgBI2ht8= sha384-4DGOs0NkBV7xYWD6shsTNiF1wntgUJWgiPweULWmkbkVYdE/kJsAZoInUdZUkf1y sha512-xuxXBDvm6oEuGEh42w56jjkk9LjTHz81aArDVCRTg765OtKcnHTmnjMc/6snE3jvAwSpQ3DqEQRNfdRI//iVrQ==" crossorigin="anonymous"></script>
+<script src="../js/typeahead.bundle.min.js?v=14122023" integrity="sha256-9zSL05FT/ll1wMbCXUn8vEJSr3CitQbMRRVgs4yK1No= sha384-f3Q3arEJuC46dRb3Md/Ne03NwCnvv997b2kEPltAkBwHtO6+cIPno69ymAWzu7nc sha512-GOYy3RR82jihcHZCyDBAcN/v8J67XEIh9SpqxjVt+1DPRZ1gr803yEG8U1mfj2DvqqOmTmbrnogaiXs/Zlpjrg==" crossorigin="anonymous"></script>
+<link href="../CSS/core.min.css?v=14122023" rel="stylesheet" />
+<link href="../CSS/ek.min.css?v=14122023" integrity="sha256-a8C+iAaCX+GVxesuZ0kV15eu7A08gOxdFdziVEp8I6g= sha384-xzWGS4eFgq2LTtW4fAe/DfZuDrUcCd0zqGxcxqEeyER7H3iFztRZ7pi5HYAUG2Y6 sha512-sb3jzqx8V2bH1uy7jLm5yysrFh5tc/LU7kzGZad+voklnPni/0yEYP79xFE4zhNxq6TD8gDqIkfwqVFS9ap3Qg==" crossorigin="anonymous" rel="stylesheet" />
+<script src="../js/ie-emulation-modes-warning.min.js?v=14122023" integrity="sha256-7mirJL2Rnvvy+lkA0DinywvqGi9IMwwb+M9DqsHbpdQ= sha384-qjrsKu1gPjB1pm5CWK/OfAl/fYdvYhZKO2YuJAjwwQXwDYiG+0Cn4z40MWYL4nBh sha512-YcGDfojZc6HKKqLHcv4UEd1WSCTUjWcUPa9argzJcU6cKSOo2iFpMEDUsEPq1mj2QXNDXlngDCTDBORm64zZvA==" crossorigin="anonymous"></script>    
+    
+<!--BRSR PAX Control end -->
+<input type="hidden" name="ctl00$c$CtNoOfTr$hdnallpaaxcount" id="hdnallpaaxcount" />
+
+<input type="hidden" name="ctl00$c$CtNoOfTr$hdnEKShowBR" id="hdnEKShowBR" value="N" />
+<input type="hidden" name="ctl00$c$CtNoOfTr$hdnEKShowFG" id="hdnEKShowFG" value="N" />
+
+<input type="hidden" name="ctl00$c$CtNoOfTr$hdnShowBRPaxControl" id="hdnShowBRPaxControl" value="true" />
+
+<input type="hidden" name="ctl00$c$CtNoOfTr$hdnisPostBack" id="hdnisPostBack" />
+
+<input type="hidden" name="ctl00$c$CtNoOfTr$hdnIBEToEKHREFURL" id="hdnIBEToEKHREFURL" value="/SessionHandler.aspx?pub=/ng/english&amp;pageurl=/system/aspx/link.aspx&amp;ID=/account/ng/english/business-rewards/people.aspx" />
+
+<div id="ctl00_c_CtNoOfTr_dvNoOfTravellers" class="travelers-container" style="display:block;">
+<!--BRSR PaxControl-->
+<h2 class="flightSearch">
+Passengers
+</h2>
+<!--BRSR-1943 fix-->
+<a href="javascript:void(0);" id="ctl00_c_CtNoOfTr_IBE_NOT_HLPLNK1" class="flat-question-mark for-tooltip" data-access-tooltip="true" aria-labelledby="lbltooltip"></a>
+<label id="lbltooltip" class="visually-hidden" aria-hidden="true">Passenger tool-tip: Press space or enter to get more information and then use down arrow to navigate through the content of the tool-tip.</label>
+<!--BRSR BR Pax Controlstart -->
+<div id="ctl00_c_CtNoOfTr_travelers_header_info_section" class="travelers-header-info-section" style="display: none;">
+<span class="maxseats"></span>
+<span class="maxseatstext" style="display: none">
+You are booking {0} {1} - You can book a maximum of nine seats.
+</span>
+<span class="maxseatsFGtext" style="display: none">
+[NUMBER] [PAX] selected
+</span>
+<span class="seattext" style="display: none">
+seat
+</span>
+<span class="seatstext" style="display: none">
+seats
+</span>
+<span class="paxtext" style="display: none">
+passenger
+</span>
+<span class="paxestext" style="display: none">
+passengers
+</span>
+<span class="ManagePeopleLinkText" style="display: none">
+Manage travellers
+<span class="spnmanagepeople sr-only">
+Please Note The focus will shift to select passenger field after 8 seconds
+</span>
+</span>
+<span class="NoResultsFound" style="display: none">
+No results found.
+</span>
+</div>
+
+<div class="clearfix" aria-hidden="true"></div>
+<div class="question-mark-tooltip" id="dvtooltip" role="tooltip">
+<div class="tooltip-content">
+<div class="tooltip-left-bottom"></div>
+<div class="tooltip-right-top"></div>
+<div class="tooltip-right-bottom"></div>
+<div class="tooltip-arrow"></div>
+<ul class="bulletList"><li>You can book up to nine passengers per booking, including adults and children.</li><li>In addition, each adult passenger can bring one infant.</li><li>Children travelling alone, or in a different cabin class to their parents, are considered <a href="https://www.emirates.com/english/family/planning-your-family-trip/unaccompanied-minors/?pub=autodetect" target="_blank" class="bodyLink">Unaccompanied Minors<span class="visually-hidden">(Opens a new window)</span></a> and pay the full adult fare. Please <a href="https://www.emirates.com/english/help/offices/?pub=autodetect" target="_blank" class="bodyLink">get in touch with us<span class="visually-hidden">(Opens a new window)</span></a> to book this service.</li></ul>
+</div>
+</div>
+
+<div id="ctl00_c_CtNoOfTr_paxekwrapper" class="br-pax-select-block" style="display: none">
+<div class="ek ek-wrapper">
+<div class="input-holder named-passenger-selector-wrapper">
+<label class="passengers-icon label-hidden-text" id="named-passenger-selector-label" for="named-passenger-selector">
+<!--Select passengers-->
+<span class="visually-hidden">
+Press tab to add passenger</span>
+</label>
+<input type="text" aria-hidden="true" aria-labelledby="named-passenger-selector-label" id="named-passenger-selector" class="named-passenger-selector-base" name="named-passenger-selector" title="press backspace to remove" placeholder="Select people" autocomplete="off" />
+
+<span class="spnautocomplete sr-only" aria-hidden="true" style="display: none">
+Auto-complete results are available, use up and down arrow keys to navigate.
+</span>
+<span class="spnnoresults sr-only" aria-hidden="true">
+No results found.
+</span>
+<span class="spnremove sr-only" aria-hidden="true">
+This passenger has been removed. Press Enter to add the passenger.
+</span>
+<span class="spnclose sr-only" aria-hidden="true">
+You can remove this passenger using the backspace key.
+</span>
+<span class="spndubpassenger sr-only" aria-hidden="true">
+You've already selected this passenger.
+</span>
+<span class="spnselectlabel sr-only" aria-hidden="true">
+Select passenger has autocomplete. You can book a maximum of nine seats.
+</span>
+<span class="spnmaxexceed sr-only" aria-hidden="true">
+You can book a maximum of nine seats.
+</span>
+<span class="spnpassengerselected sr-only" aria-hidden="true">
+{Title} {FirstName} {LastName} is the selected passenger.
+</span>
+<span class="sr-only helper-hidden-accessible" id="msgautoComplete"></span>
+</div>
+
+</div>
+</div>
+
+
+<div id="ctl00_c_CtNoOfTr_travelers_row" class="travelers-row">
+
+
+
+<fieldset>
+<legend id="fieldset_title_travelers" class="label-hidden">
+Select the number and types of passengers who are travelling</legend>
+<div id="trAdult" class="custom-select-box">
+<div class="fare-custom-select fr-custom-select-container">
+<label for="ctl00_c_CtNoOfTr_numberAdults" class="label-hidden">
+Adults</label>
+<select name="ctl00$c$CtNoOfTr$numberAdults" id="ctl00_c_CtNoOfTr_numberAdults" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" class="fare-select-adults" data-access-message-chosen="You have selected [VAL] adults." onchange="ValidatePaxNo();IsClassToggle();setNoOfSlctdPax();" data-access-title="Select the number of adults, age 12+" data-chosen-select="true" data-no-results-found-text="No results found" data-access="select-chosen" data-fixed-placeholder="Adults: " data-results-found-text="[VAL] results found" data-start-typing-text="Please enter a value to get results.">
+	<option selected="selected" value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+
+</select>
+</div>
+<div class="clearFix" aria-hidden="true"></div>
+<p aria-hidden="true">
+(Age 12+)
+</p>
+</div>
+<div id="ctl00_c_CtNoOfTr_trOFW" class="custom-select-box custom-select-box--ofw" style="display: none">
+<div class="fare-custom-select fr-custom-select-container">
+<label for="ctl00_c_CtNoOfTr_numberOFW" class="label-hidden">
+Overseas Filipino Worker</label>
+<select name="ctl00$c$CtNoOfTr$numberOFW" id="ctl00_c_CtNoOfTr_numberOFW" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" class="fare-select-ofw" data-access-message-chosen="You have selected [VAL] Overseas Filipino Worker(s)." onchange="ValidatePaxNo();IsClassToggle();setNoOfSlctdPax();" data-access-title="Select the number of OFW, age 12+" data-chosen-select="true" data-no-results-found-text="No results found" data-access="select-chosen" data-fixed-placeholder="OFW: " data-results-found-text="[VAL] results found" data-start-typing-text="Please enter a value to get results.">
+	<option selected="selected" value="0">0</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+
+</select>
+</div>
+<div class="clearFix" aria-hidden="true"></div>
+<p aria-hidden="true">
+(Overseas Filipino Workers)
+</p>
+</div>
+<div id="ctl00_c_CtNoOfTr_trTeenAger" class="custom-select-box" style="display: none">
+<div class="fare-custom-select fr-custom-select-container">
+<label for="ctl00_c_CtNoOfTr_numberTeenagers" class="label-hidden">
+Teenagers</label>
+<select name="ctl00$c$CtNoOfTr$numberTeenagers" id="ctl00_c_CtNoOfTr_numberTeenagers" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" class="fare-select-teenagers" data-access-message-chosen="You have selected [VAL] teenagers." onchange="ValidatePaxNo();IsClassToggle();setNoOfSlctdPax();" data-access-title="Select the number of teenagers, aged between 12 and 15." data-chosen-select="true" data-no-results-found-text="No results found" data-access="select-chosen" data-fixed-placeholder="Teenagers: " data-results-found-text="[VAL] results found" data-start-typing-text="Please enter a value to get results.">
+	<option selected="selected" value="0">0</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+
+</select>
+</div>
+<div class="clearFix" aria-hidden="true"></div>
+<p aria-hidden="true">
+(Age 12-15)
+</p>
+</div>
+<div id="ctl00_c_CtNoOfTr_trChild" class="custom-select-box">
+<div class="fare-custom-select fr-custom-select-container">
+<label for="ctl00_c_CtNoOfTr_numberChildren" class="label-hidden">
+Children</label>
+<select name="ctl00$c$CtNoOfTr$numberChildren" id="ctl00_c_CtNoOfTr_numberChildren" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" class="fare-select-children" data-access-message-chosen="You have selected [VAL] children." onchange="ValidatePaxNo();IsClassToggle();setNoOfSlctdPax();" data-access-title="Select the number of children, age between 2 and 11." data-chosen-select="true" data-no-results-found-text="No results found" data-access="select-chosen" data-fixed-placeholder="Children: " data-results-found-text="[VAL] results found" data-start-typing-text="Please enter a value to get results.">
+	<option selected="selected" value="0">0</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+
+</select>
+</div>
+<div class="clearFix" aria-hidden="true"></div>
+<p aria-hidden="true">
+(Age 2-11)
+</p>
+</div>
+<div id="ctl00_c_CtNoOfTr_trInfant" class="custom-select-box">
+<div class="fare-custom-select fr-custom-select-container">
+<label for="ctl00_c_CtNoOfTr_numberinfants" class="label-hidden">
+Infants</label>
+<select name="ctl00$c$CtNoOfTr$numberinfants" id="ctl00_c_CtNoOfTr_numberinfants" data-access-message-selected="Selected: [VAL]" data-no_results_text="No results found" data-copy-input-field="Enter the value you&#39;re searching for" class="fare-select-infants" data-access-message-chosen="You have selected [VAL] infants." onchange="fnRedeemInfantCheck();IsClassToggle();" data-access-title="Select the number of infants, under age 2, carried on lap." data-chosen-select="true" data-no-results-found-text="No results found" data-access="select-chosen" data-fixed-placeholder="Infants: " data-results-found-text="[VAL] results found" data-start-typing-text="Please enter a value to get results.">
+	<option selected="selected" value="0">0</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+
+</select>
+</div>
+<div class="clearFix" aria-hidden="true"></div>
+<p aria-hidden="true">
+(Age under 2, on lap)
+</p>
+</div>
+
+
+<button id="ctl00_c_CtNoOfTr_passenger_remove_btn" role="link" class="passenger-remove-btn" data-controls-dependent=".travelers-row-dependent, .passenger-add-btn" data-focus-target=".passenger-add-btn" style="display: none">
+Remove additional passengers
+<span class="label-hidden">
+Please note: this button will hide the additional passengers section.
+
+</span>
+</button>
+
+
+</fieldset>
+</div>
+<div class="clearFix"></div>
+
+
+
+<button id="ctl00_c_CtNoOfTr_passenger_add_btn" role="link" class="gray-button passenger-add-btn" data-controls-dependent=".travelers-row-dependent, .passenger-add-btn" data-focus-target="#ctl00_c_CtNoOfTr_numberAdults_chosen .chosen-single" style="display: none">
+<span aria-hidden="true">+</span>
+
+Add more passengers
+<span class="visually-hidden">
+Please note: this button will cause the additional passengers section to appear.
+</span>
+</button>
+
+
+<div class="clearFix"></div>
+
+</div>
+
+
+
+
+
+<div id="dvCugoTCLine"></div>
+<!-- Added this div for Cugo TandC border line to hide and show  -->
+<div id="ctl00_c_pnlPO">
+	
+
+<!-- SECTION - PROMOTIONAL OFFERS -->
+<div id="ctl00_c_CtPrOffer_dvPromotionOffers" class="promotional-offers-container ts-pb-promo-code" data-ts-comp="PbPromoCode" style="display:block;">
+<h2 class="flightSearch">
+Promotional offers</h2>
+<div id="ctl00_c_CtPrOffer_dvPromoContainer" class="fare-inputs-row three-width-items ts-pb-promo-code-input-container">
+<span class="ts-pb-image-icon ts-icon-loader" aria-hidden="true" data-ts-pos-offset="5"></span>
+<span class="ts-pb-font-icon ts-icon-check" aria-hidden="true"></span>
+<span class="ts-pb-font-icon ts-icon-clear" aria-hidden="true"></span>
+<label for="ctl00_c_CtPrOffer_txtEnterCode" class="label-hidden">
+Promotional code</label>
+<input name="ctl00$c$CtPrOffer$txtEnterCode" type="text" id="ctl00_c_CtPrOffer_txtEnterCode" class="blue-outline" onkeyup="EnableEmailCUGO();" maxlength="7" aria-describedby="ts-pb-promo-input-message ts-pb-promo-input-extra-desc" placeholder="Promotional code" data-ts-promo-valid-msg="Valid promotional code" data-ts-promo-invalid-msg="The promotional code you entered is incorrect. Please check and try again." /> 
+<p id="ts-pb-promo-input-message" class="ts-pb-promo-input-message" aria-live="assertive"></p>
+<p id="ts-pb-promo-input-extra-desc" class="visually-hidden">
+The keyboard focus will be moved to a newly added banner image after you enter a valid promotional code. Please note that some of the options of the search criteria may change based on the promotional code.
+</p>
+<div class="ts-pb-promo-code-skywards-info">
+<p class="js-cugoLoginRequired">
+The promotion is only available for Emirates Skywards members. Please <a href='#'aria-label= 'Sign up to take advantage of our promotional offer' onclick=openSignUp('https://www.emirates.com/system/ASPX/Link.aspx?ID=https://www.emirates.com/account/english/light-registration/?pub=autodetect');>sign up</a> or <a href='#'aria-label= 'Log in to take advantage of our promotional offer' onclick=openLogin();>log in</a> now to take advantage of this offer.                
+</p>
+<p class="js-redemptionCugo" style="display:none;">
+The promotion is only available for Emirates Skywards members. Please <a href='#'aria-label= 'Log in to take advantage of our promotional offer' onclick=openLogin();>log in</a> now to take advantage of this offer.
+</p>
+</div>
+
+</div>
+<div id="ctl00_c_CtPrOffer_pnlPassword" style="display: none;" class="fare-inputs-row three-width-items">
+<label for="ctl00_c_CtPrOffer_txtPassword" class="label-hidden">
+Enter password</label>
+<input name="ctl00$c$CtPrOffer$txtPassword" type="password" id="ctl00_c_CtPrOffer_txtPassword" class="blue-outline" aria-required="true" placeholder="Enter password" />
+<img aria-hidden="true" alt="Required" src="../Images/manage_account/payment_section/asterisk.png" class="pl5 asterisk" />
+</div>
+<div id="ctl00_c_CtPrOffer_pnlPOPERISHABLECUGO" style="display:none;" class="fare-inputs-row three-width-items">
+<label for="ctl00_c_CtPrOffer_txtRefNumber" class="label-hidden">
+Promotional code</label>
+<input name="ctl00$c$CtPrOffer$txtRefNumber" type="text" id="ctl00_c_CtPrOffer_txtRefNumber" class="blue-outline" maxlength="11" aria-required="true" placeholder="Promotional code" />
+<img aria-hidden="true" alt="Required" src="../Images/manage_account/payment_section/asterisk.png" class="pl5 asterisk" />
+</div>
+<div id="ctl00_c_CtPrOffer_pnlPOEMCUGO1" style="display:none;">
+		
+<div id="ctl00_c_CtPrOffer_trEmail" style="display: none;" class="fare-inputs-row three-width-items">
+<label for="ctl00_c_CtPrOffer_txtEmailID" class="label-hidden">
+Enter email address</label>
+<input name="ctl00$c$CtPrOffer$txtEmailID" type="text" id="ctl00_c_CtPrOffer_txtEmailID" class="blue-outline" maxlength="50" aria-required="true" placeholder="Enter email address" />
+<img aria-hidden="true" alt="Required" src="../Images/manage_account/payment_section/asterisk.png" class="pl5 asterisk" />
+</div>
+<div id="ctl00_c_CtPrOffer_trUniqueKey" style="display: none;" class="fare-inputs-row three-width-items">
+<label for="ctl00_c_CtPrOffer_txtCUGOUniqueKey" class="label-hidden">
+Enter unique code</label>
+<input name="ctl00$c$CtPrOffer$txtCUGOUniqueKey" type="text" id="ctl00_c_CtPrOffer_txtCUGOUniqueKey" class="blue-outline" maxlength="50" aria-required="true" placeholder="Enter unique code" />
+<img aria-hidden="true" alt="Required" src="../Images/manage_account/payment_section/asterisk.png" class="pl5 asterisk" />
+</div>
+
+	</div>
+</div>
+
+
+</div>
+
+
+<br />
+<div id="ctl00_c_pnlFF">
+	
+<span id="lblSearch" class="visually-hidden" aria-hidden="true">
+Search for your flights</span>
+<span id="spMilesAddtionalOptionsExpanded" class="visually-hidden" aria-hidden="true">
+Classic Rewards option expanded</span>
+<span id="spMilesAddtionalOptionsCollapsed" class="visually-hidden" aria-hidden="true">
+Classic Rewards options collapsed</span>
+<a onclick="updateNumberAdults(); return checkValidation();" id="ctl00_c_IBE_PB_FF" class="red-button" aria-labelledby="lblSearch" onmousedown="$(&#39;#hdnFFClick&#39;).val(&#39;1&#39;);" href="javascript:__doPostBack(&#39;ctl00$c$IBE_PB_FF&#39;,&#39;&#39;)"> 
+<span style="cursor:pointer" aria-hidden="true">Search</span>
+</a>
+
+
+</div>
+
+<div id="CugoTandCFooter" style="display: none;">
+<div class="ts-empty-height"></div>
+<div class="ts-terms-and-conditions">
+<h3>
+Terms and conditions</h3>
+<div id="ctl00_c_CbTermsAndConditions">
+</div>
+</div>
+</div>
+<div class="we-accept-cards"></div>
+<div class="spacer20">
+</div>
+
+<script type="text/javascript" src="../js/ssologin.min.js?v=14122023" integrity="sha256-T2PMxts4u53vqRWAzmcAuJH+71DqZA60loICtl5p/6g= sha384-cSVs1H4zgsFpc/JBLtMpjT/lWozTnaaWNI1ZIVMgkW5R/FNLKQE9cF6C9DLaFaSM sha512-ohlBhEqnrOjNrMtY9/gaN7SqsULQKRGKZK1CY6Zwnf74XTT0T61i+U85IUjTTM1j2ump46UtFLc/0MDH2t2Fmg==" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/sso-login.min.css?v=14122023" integrity="sha256-THM8jaU4MNPESJEoXBtit0nlHp/ze09MgkvZkJBldwM= sha384-jYlUfAY7hFZ6616oxNAX27WtrS8TynK6TViSJ+AfDvkwROQzccb9UBffsDT5hMoi sha512-87fiv+R5EuWE6B2itp4XUgSFJg1i999kK8VkWf8eyrDuaX0OgD4DTCYO5aLcyw7Nlgo/8QYISRjL+nJ8gJNmXw==" crossorigin="anonymous" />
+    
+<div class="ssoModalOverlay" id="modalClose"></div>
+<div id="ctl00_c_SSOLogin_dvMainssoModal" class="ssoModal" role="dialog">
+<div class="ssoContent sso-login-content" id="ssoModal" role="document" tabindex="0" aria-labelledby="modalTitle1">
+<iframe id="ctl00_c_SSOLogin_loginIFrame" class="sso-iframe" targeturl="https://accounts.emirates.com//ng/english/sso/login?clientId=Wzpoqe8PclRbDWHcxGt67MFBlA41xPIt&amp;state=eyAidHlwIjogIkpXVCIsICJhbGciOiAiSFMyNTYifQ==.eyJwdWIiOiIvbmcvZW5nbGlzaCIsIm1ldGhvZCI6ImlmcmFtZSIsImNvcklkIjoiNTE3ZjEwYzMtNTk3Ni00NGQ3LTk0OTMtMDcxMTlmMmU4NjVjIiwiY2FsbGVyIjoiIiwidGNtIjoiIiwic3RhdGVUb2tlbiI6IjNlZTU0MWFiLTNlMGMtNGYzZS04Zjc1LTBjYzY4MDgxOTczNCJ9.eyAidHlwIjogIkpXVCIsICJhbGciOiAiSFMyNTYifQ==" protected-login="false" IsSSOUILoggingReq="Y"></iframe>      
+<div class="ssoClose" style="display: block;">
+<a href="javascript:void(0);" class="modalCloseBtn">
+<span aria-hidden="true" class="icon-close"></span>
+<span class="visually-hidden">
+Close window</span>
+</a>
+</div>
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+<noscript>
+<input type="hidden" name='j' value="f" />
+</noscript>
+</div>
+
+
+            </div>
+            <div class="chatDiv WebchatPosition_IBE" aria-labelledby="ltWebChatAudio" aria-atomic="true"></div>
+            <span id="ltWebChatAudio" class="visually-hidden" aria-hidden="true">
+                Web chat is now loaded.
+            </span>
+            
+            
+            <input type="hidden" name="ctl00$tempMachineName" id="ctl00_tempMachineName" value="IE1_01-wsdl-@@@204:7001-***-v3lyn1m22yt1beiolgfle4sp" />
+            
+<div class="ek ek-wrapper new-ek-footer navigation-skinny">
+<footer class="footer-navigation">
+<div class="footer-nav-container">
+<div class="container">
+<div id="footerLinks" class="row">
+<div class="col-md-12">
+<div class="footer-links">
+<ul class="btn-group">
+<li class="btn-group">
+<a id="ctl00_NewGNFooter_hrBookFlight" title="Book a flight" data-id="header_nav_link" class="text-link-primary" href="/CAB/IBE.aspx?j=f">Book a flight</a></li>
+<li class="btn-group">
+<a id="ctl00_NewGNFooter_hrManageBooking" title="Manage a booking" data-id="header_nav_link" class="text-link-primary" href="/CAB/MYB.aspx?j=f">Manage a booking</a></li>
+<li class="btn-group">
+<a id="ctl00_NewGNFooter_hrOnlineCheckIn" title="Online check-in" data-id="header_nav_link" class="text-link-primary" href="/CAB/OLCI.aspx?j=f">Online check-in</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<div id="ctl00_NewGNFooter_BRDIV" class="footer-br">
+<p>
+
+</p>
+<p>
+
+</p>
+</div>
+
+
+<div class="footer-bottom-fix">
+<div class="row footer-seperator-row">
+<div class="col-md-11">
+<div class="footer-seperator">
+<!---->
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-9">
+<div class="btn-group" aria-label="Legal">
+<div class="footer-disclaimer">
+<div class="copyright-btn">
+<span class="copyright-text">
+© 2024 The Emirates Group. All rights reserved.</span>
+</div>
+
+<ul>
+<li class="btn-group">
+<a id="ctl00_NewGNFooter_hrAccessibility" data-id="footer_nav_link" class="btn btn-link" role="link" href="/transfer/information/accessibility/">
+<span class="inner"><span class="inner-text">
+Accessibility</span></span>
+</a>
+</li>
+
+<li class="btn-group">
+<a id="ctl00_NewGNFooter_hrContactUs" data-id="footer_nav_link" class="btn btn-link" role="link" href="/transfer/help/">
+<span class="inner"><span class="inner-text">
+Contact us</span></span>
+</a>
+</li>
+
+<li class="btn-group">
+<a id="ctl00_NewGNFooter_hrPrivacyPolicy" data-id="footer_nav_link" class="btn btn-link" role="link" href="/transfer/information/privacy-policy/">
+<span class="inner"><span class="inner-text">
+Privacy policy</span></span>
+</a>
+</li>
+<li class="btn-group">
+<a id="ctl00_NewGNFooter_hrTermsConditions" data-id="footer_nav_link" class="btn btn-link" role="link" href="/transfer/information/terms-and-conditions/">
+<span class="inner"><span class="inner-text">
+Terms and conditions</span></span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="">
+<a href="/SessionHandler.aspx?pageurl=index.aspx&pub=/ng/english&page=/ng/english/&target=ibe.aspx" id="ctl00_NewGNFooter_NEW_EK_LOGO_AN_FOOTER" class="logo-emirates-footer" target="_self">
+<img id="ctl00_NewGNFooter_NEW_EK_LOGO_FOOTER" src="/media/Footer_Logo_global_tcm209-153887.svg" />
+<span class="sr-only">
+Emirates logo</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+            
+            <script type="text/javaScript" >
+                document.write("<img alt='' style='display:none;' src='../System/aspx/ScriptChecker.aspx?ECMAScript=true&amp;random=-8584966082729910085' />"); 
+            </script>
+            <noscript>
+                <img alt="" style="display: none;" src="../System/aspx/ScriptChecker.aspx?random=-8584966082729910085" />
+            </noscript>
+        </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+wws='NG';noadult='';MM_findObj('ctl00_c_hdnData').value='';setValues(MM_findObj('ctl00$c$CtWNW$txtarrivaldate'),'',false);Tab=2;var CCls=new Array();CCls[0]='0:Economy Class';CCls[1]='1:Business Class';CCls[2]='2:First Class';CCls[3]='7:Premium Economy';setValues(MM_findObj('ctl00$c$CtWNW$txtDepartDate'),'04 Mar 24',false);VisDisp('ctl00_c_RMRow',4);setValues(MM_findObj('ctl00_c_CtNoOfTr_numberChildren'),'0',true);setValues(MM_findObj('ctl00_c_CtNoOfTr_numberOFW'),'0',true);setValues(MM_findObj('ctl00_c_CtNoOfTr_numberTeenagers'),'0',true);setValues(MM_findObj('ctl00_c_CtNoOfTr_numberinfants'),'0',true);ctrlVisibility(0,2);setValues(MM_findObj('ctl00$c$CtWNW$flightClass'),'0',true);setValues(MM_findObj('ctl00$c$CtWNW$flightClass1'),'0',true);noadult='';IsEkOperated('FIH');setValues(MM_findObj('ctl00_c_CtPrOffer_txtEnterCode'),'',false);setValues(MM_findObj('ctl00_hdnTabValue'),'2',false);function setModStyle(){setCabinStyles('ctl00_c_CtWNW_flightClass',0);setCabinStyles('ctl00_c_CtWNW_flightClass1',0);}//]]>
+</script>
+<script language='javascript' >var ofwPOS='MNL,CRK';</script><script language='javascript' >var pageData = {"languageUrls":[{"url":"/ng/english","culture":"en-GB","pageUrl":"/CAB/System/aspx/ChangePageLang.aspx?pub=/ng/english"}]};</script><script language='javascript' >var gnJsonDatanew = {"Region":"AF","Country":"NG","WebApiCountrySelector":"https://www.emirates.com/api/location/region/all","SiteLang":"en"};</script>
+<script type="text/javascript">
+//<![CDATA[
+var gnJsonData = {"Region":"AF","Country":"NG","WebApiCountrySelector":"https://www.emirates.com/api/location/region/all","SiteLang":"en"};WebForm_AutoFocus('ctl00_c_errorPnl');//]]>
+</script>
+</form>
+
+    
+    
+<script type="text/javascript" >
+<!-- 
+var sChannelName = "Emirates Booking Engine";
+var sPageName = "ibe : return search";
+
+var s = 
+{ 
+    t: function () 
+    { 
+        return false; 
+    }, 
+    tl: function () 
+    { 
+        return false; 
+    }, 
+    getQueryParam: function (intcid)
+    { 
+        return ""; 
+    } 
+};
+
+if (typeof(sPageName) == "undefined" || sPageName == ""){s.pageName = unescape(" : ibe : return search");}
+else{s.pageName = unescape(" : ") + sPageName;s.pageName = s.pageName.toLowerCase();}
+if (typeof(sChannelName) == "undefined" || sChannelName == ""){s.channel = unescape("Emirates Booking Engine");}
+else{s.channel = sChannelName;}
+if (typeof(s.prop12) == "undefined" || s.prop12 == ""){s.prop12 = s.pageName;}
+s.server = unescape("EC2AMAZ-A3M6JAK");s.pageType = unescape("");v0 = unescape("");
+s.state = unescape("");s.zip = unescape("");s.events = unescape("");
+s.products = unescape("");s.purchaseID = unescape("");s.eVar53 = unescape("");
+s.prop38 = unescape("");s.prop39 = unescape("");s.prop41 = unescape("");
+s.prop40 = unescape("");s.prop6 = unescape("");s.prop10 = unescape("");
+
+s.eVar3 = unescape("www.emirates.com");
+s.eVar28 = unescape("Saver-IBE");
+s.eVar39 = unescape("MUC");
+s.eVar40 = unescape("FIH");
+
+s.prop1 = unescape("ibe : return search");
+s.prop13 = unescape("Logged Out");
+s.prop20 = unescape("MUC");
+s.prop21 = unescape("FIH");
+s.prop22 = unescape("MUC-FIH");
+s.prop26 = unescape("52");
+s.prop27 = unescape("1");
+s.prop28 = unescape("zero");
+s.prop29 = unescape("1");
+s.prop31 = unescape("zero");
+s.prop1 = unescape("ibe : return search");
+s.prop5 = unescape("IBE_FQE_ERR002");
+
+var s_code = s.t();
+if (s_code){document.write(s_code)}
+//-->
+</script>
+
+
+
+    
+    <img id="ctl00_imgSessionAlive" alt=" " class="outofsight" />
+    <img id="ctl00_imgSessionMYB" alt=" " class="outofsight" />
+    <img id="ctl00_imgSessionOLCI" alt=" " class="outofsight" />
+
+    
+    <div class="container-fixed-session-timeout" style="display: none;">
+        <div class="container-modal-session-timeout session-timeout-message" aria-labelledby="modalTitle1">
+            <img src="/Images/manage_account/fare_families/warning_icon_orange.png" alt="" />
+            <span class="title-modal nocufon" id="modalTitle1" tabindex="0">
+                <span class="visually-hidden">New window opened</span>
+                <span role="heading" aria-level="1">Session time out</span>
+            </span>
+            <hr class="separator-thb mb20" aria-hidden="true" />
+            <p class="text-modal text-modal-blck">
+                Your session will expire in <strong class='timeleft'><span class='number'>20</span> seconds</strong>. Please click Continue to stay on your current page. If the countdown is at 0 seconds, your session has expired and you can Start a new session.
+            </p>
+            <div class="cf"></div>
+            <hr class="separator-thb mt20" aria-hidden="true" />
+            <a id="btnExtendSession" class="red-button floatR js-modal-close" title="Continue your session" href="javascript:void(0);">
+                Continue
+            </a>
+           
+            <a href="/IBE.aspx" id="ctl00_StartNewSession" class="link-toggle-input" title="Start a new session">
+                <span class="link-show" data-message-onclick="Go to Homepage">
+                    Start a new session
+                </span>
+            </a>
+            
+            <div class="pb10" aria-hidden="true"></div>
+            <a class="close-btn-tooltip js-modal-close js-modal-session-close" href="javascript:void(0);" data-message-alert-onclick="Window closed">
+                <span aria-hidden="true">Close</span>
+                <span class="visually-hidden">Close window</span>
+            </a>
+        </div>
+        <div id="dynamic-message-countdown" class="visually-hidden" aria-hidden="true">Your session will be expired in <span class='number'>20</span> seconds</div>
+    </div>
+    <div class="container-overlay session-timeout-overlay"></div>
+
+    
+
+   <div class="container-fixed-summary-box-clear" style="display:none;" id="divSummaryBoxClearConfirmation">
+        <div class="summary-box-clear-alert-container pax-alert-container alert-height" role="dialog" tabindex="0" data-ts-comp="Modal" data-ts-modal="summary-box-clear" data-ts-close-button="" data-ts-fixed-background="" data-ts-vertical-middle="">
+            <div class="acc-header p-none pt10 pb10 pl15 pr15 summary-box-clear-alert">
+                <div class="cf summaryclear">
+                    <div class="left-part cf textAlignC">
+                        <span class="warning-title d-inline-block m-none floatNone warning-pax-title" id="copyOne1" >                            
+                            Are you sure?
+                        </span> 
+                    </div>
+                    <a class="remove-button floatR dn" href="javascript:void(0);" style="display: none">
+                        <span class="visually-hidden">
+                            Close window
+                        </span>
+                    </a> 
+                </div> 
+                <div class="alert-ontent-container" id="copyTwo1">                    
+                    <p class="warning-alert-content fs-14 width-730">
+                        Going back will remove your flight selection. Click OK to continue and Cancel to stay on this page.</p>
+                </div>
+                <div class="floatR">
+                    <a class=" mr25 floatL p10 ts-btn-cancel" href="javascript:void(0);" id="btnSummaryBoxClearCancel">
+                        Cancel
+                    </a>
+                    <a class="red-button ts-btn-proceed" href="javascript:void(0);" id="btnSummaryBoxClearOk">
+                        Ok
+                        
+                        </a>
+                    <button class="ts-icon-close cancel-ps-modal" role="link" data-ek-id="ek-modal-close" id="btnSummaryBoxClearClose">
+                            <span class="ts-aria-only">
+                                Close dialog</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+  
+    <script type="text/javascript" lang="javascript" >
+        function HideIntersitle() {
+            try {
+                document.getElementsByTagName('html')[0].style.overflow = '';
+                document.getElementsByTagName('body')[0].style.overflow = '';
+                $('body').removeClass('fareFamiliesLoaderBodyBG');
+                $('body').removeClass('loader-option-1');
+
+                if ($('#interdiv') != null) {
+                    $('#interdiv').hide();
+                    $('.footerShadow').attr('style', 'display:;');
+                    $('#footer').attr('style', 'display:;');
+                }
+                MM_findObj('masterblock').style = '';
+                window.scrollTo(0, 0);
+            } catch (e) { }
+            return false;
+        }
+    </script>
+
+
+
+    
+
+    <script lang="javascript" type="text/javascript"  >
+        var isArabic = 'False';
+        document.write("<div id='interdiv' style='display: none;'><div class='fareFamiliesLoaderBody' aria-atomic='true' aria-hidden='true'>"
+                   + "<a href='#' title='Emirates' >"
+                       + "<img id='logo' alt='Emirates Airline' src='/media/logo_global_tcm209-153420.png' title='Emirates Airline'/>" // WACG - Huy - add end tag for img
+                                + "<img id='slogan' class='hello-img' alt='Fly better' src='/media/hello_tomorrow_transparent_tcm209-153343.png'/>" // WACG - Huy - add end tag for img
+                            + "</a>"
+                        + "</div>"
+                        + "<div class='fareFamiliesLoader activeLoader' role='alert' aria-labelledby='ltWaitAudio' aria-atomic='true' aria-hidden='true'>"
+                            + "<div class='fareFamiliesInterDivContent'>"
+                            + "<p role=\"heading\" class=\"EK_Font interstitial-headings-cufon textCenter\">At your fingertips</p>"
+                            + "<span id='ltWaitAudio' class='visually-hidden'>Searching your flights. One moment please…</span>"
+                            + "<span>Explore the world your way with our app for iPhone, Apple Watch and Android.</span>"
+                            + "</div>"
+                        + "</div></div>");
+
+    </script>
+    <script lang="javascript" type="text/javascript" >
+        try {
+            InitiatePlaceHolder();
+        }
+        catch (e) {
+        }
+        ReCreateSuggestions();
+        CreateCUGOSuggestions();
+        CreateOLCISuggestions();
+        CreateBRCalculatorSuggestions();
+        CreateFltWgtSuggestions()
+        if (__SessionCugo != null && __SessionCugo == 'True') {
+            HideAdvanceLink();
+        }
+    </script>
+    
+<script type="text/javascript"  src="/-fWR-WUEiwNEckwNYQ/1JiEV48pNcwaih/XjtCLQ/Ym/RAXXgXTmQ"></script></body>
+
+
+<script type="text/javascript" lang="javascript" >
+    $(document).ready(function () {
+        var IsDexEnabled = ($("#DEXEnabled").val() == "true");
+        if (!IsDexEnabled) {// code added for DEX integration
+            fnWebChatListener();
+        }
+        try {
+            if ($('#watp_formName').val().toUpperCase() != 'PAYMENTDETAILS' && !IsDexEnabled) {
+                WebChatAsync('', '', '', '', $('#watp_formName').val().toUpperCase());
+            }
+            
+        }
+        catch (e) { }
+        $('a.chosen-single').attr('aria-expanded', "false");
+        // Vinh Cao - Init session timeout popup
+        SessionTimeoutAlarm.Init();
+        //WCAG Thinh Begin jira 3600
+        try {
+            fnOverridemain();
+            var elToFocus = $('.Init-focus');
+            if ($('.errorPanel').is(":visible") == false)
+                focusCurrTab(elToFocus);
+        }
+        catch (e) { }
+        //WCAG Thinh End jira 3600
+        var url = window.location.href;
+        if (url.indexOf('SessionTimeout.aspx') != -1
+            || url.indexOf('InvalidProcess.aspx') != -1
+            || url.indexOf('LogIn.aspx') != -1
+            || url.indexOf('SkywardsLogin.aspx') != -1) {
+
+            SessionTimeoutAlarm.DisableSessionCountDown();
+        }
+        // Vinh Cao - End
+
+        //Fix tooltip issue
+        $(".flat-question-mark").click(function () {
+            if ($(this).nextAll(".question-mark-tooltip").css("display") == "block") {
+                $(this).nextAll(".question-mark-tooltip").hide();
+                $(this).removeAttr('aria-describedby');
+            } else {
+                var self = this;
+                $(this).trigger('mouseover');
+                setTimeout(function () {
+                    $(self).nextAll(".question-mark-tooltip").show();
+                    if ($(self).data('aria-describedby')) {
+                        $(self).attr('aria-describedby', $(self).data('aria-describedby'));
+                    }
+                }, 10);
+            }
+        });
+        
+    });
+</script>
+
+        <script type="text/javascript" src="../js/currencyMessaging-extraAccessibility.min.js?v=14122023" integrity="sha256-/ohRtDEDvxxxRQ2llZMH/SsKyZp3EmLwNAr3JHLLMH0= sha384-/b71R3FvVNOEsQwmsqnr5u0qQ/IUDFHhuidkbty/WCVBYorj5Vnmz3k++g8Zk+bp sha512-MKJ806KHDcn6xWOrPGhjrW2v4VMW4nFC6QBgorQTrhbdaSdSXiZ4uV02A2q213MOxp0D9mOg09JGSoi2Z+51fQ==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/currencyMessaging-tooltip.min.js?v=14122023" integrity="sha256-G4ZVUjLBS68iZPKMuHtQUJvhOYU90t2URoRM3thKWpM= sha384-13skAzmVWuk76fekwXJqcX07/ee1Nq7qek7pRm5vqNktkUtSw3mZV94dy+jtosby sha512-kMIW/qp3IuyG68PWAlh8ZvT9JaeBdBygqRsWtq3i83yNMIDrFmnlPcNtMorzglgn2inT0N+TaZtGDa2ObwiN3w==" crossorigin="anonymous"></script>
+</html>
